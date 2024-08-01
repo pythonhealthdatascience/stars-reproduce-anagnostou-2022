@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.55">
+<meta name="generator" content="quarto-1.5.56">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -170,8 +190,6 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#code-and-data" id="toc-code-and-data" class="nav-link active" data-scroll-target="#code-and-data">Code and data</a></li>
   <li><a href="#journal-article" id="toc-journal-article" class="nav-link" data-scroll-target="#journal-article">Journal article</a></li>
-  <li><a href="#supplementary-materials" id="toc-supplementary-materials" class="nav-link" data-scroll-target="#supplementary-materials">Supplementary materials</a></li>
-  <li><a href="#sources" id="toc-sources" class="nav-link" data-scroll-target="#sources">Sources</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022/edit/main/quarto_site/study_publication.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -197,33 +215,33 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<!-- TODO: Remove this warning once filled out page -->
-<p><strong>Please note: This is a template page and has not yet been completed</strong></p>
-<!-- TODO: Add citation from .bib file i.e. @study_word_year -->
+<p><span class="citation" data-cites="anagnostou_facs-charm_2022">Anagnostou et al. (<a href="#ref-anagnostou_facs-charm_2022" role="doc-biblioref">2022</a>)</span></p>
 <section id="code-and-data" class="level2">
 <h2 class="anchored" data-anchor-id="code-and-data">Code and data</h2>
-<!-- TODO: Add link to folder in repository -->
-<p>View at: &lt;[Link]&gt;</p>
+<p>View the CHARM model at: <a href="https://gitlab.com/anabrunel/charm" class="uri">https://gitlab.com/anabrunel/charm</a></p>
+<p>In relation to the CHARM model, the article also includes links to their app code (<a href="https://gitlab.com/anabrunel/charm-app" class="uri">https://gitlab.com/anabrunel/charm-app</a>) and hosted app (<a href="https://charm-des-app.herokuapp.com/" class="uri">https://charm-des-app.herokuapp.com/</a>) (although no longer available as heroku not active).</p>
 </section>
 <section id="journal-article" class="level2">
 <h2 class="anchored" data-anchor-id="journal-article">Journal article</h2>
-<!-- TODO: Embed article PDF - e.g.
-<iframe width="100%" height="800" src="../original_study/article.pdf"></iframe>
+<p>The article does not provide permissions to reshare, so cannot be uploaded.</p>
+<p>If you wish to view this article, please navigate to any of:</p>
+<ul>
+<li>IEEE Xplore: <a href="https://doi.org/10.1109/WSC57314.2022.10015462" class="uri">https://doi.org/10.1109/WSC57314.2022.10015462</a></li>
+<li>Brunel University Research Archive: <a href="https://bura.brunel.ac.uk/handle/2438/25912" class="uri">https://bura.brunel.ac.uk/handle/2438/25912</a> (open access for personal use)</li>
+<li>UCL Discovery: <a href="https://discovery.ucl.ac.uk/id/eprint/10187277/" class="uri">https://discovery.ucl.ac.uk/id/eprint/10187277/</a> (open access for personal use)</li>
+<li>ACM Digital Library: <a href="https://dl.acm.org/doi/10.5555/3586210.3586312" class="uri">https://dl.acm.org/doi/10.5555/3586210.3586312</a></li>
+</ul>
+<p>No supplementary materials.</p>
 
-Unless the article is behind the paywall and no open-access version is available - in which case, just provide link to it -->
-</section>
-<section id="supplementary-materials" class="level2">
-<h2 class="anchored" data-anchor-id="supplementary-materials">Supplementary materials</h2>
-<!-- TODO: Embed supplementary PDF (if relevant) -->
-</section>
-<section id="sources" class="level2">
-<h2 class="anchored" data-anchor-id="sources">Sources</h2>
-<!-- TODO: Add links for where the above were sourced from -->
 
 
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-anagnostou_facs-charm_2022" class="csl-entry" role="listitem">
+Anagnostou, Anastasia, Derek Groen, Simon J. E. Taylor, Diana Suleimenova, Nura Abubakar, Arindam Saha, Kate Mintram, et al. 2022. <span>“<span>FACS</span>-<span>CHARM</span>: <span>A</span> <span>Hybrid</span> <span>Agent</span>-<span>Based</span> and <span>Discrete</span>-<span>Event</span> <span>Simulation</span> <span>Approach</span> for <span>Covid</span>-19 <span>Management</span> at <span>Regional</span> <span>Level</span>.”</span> In <em>2022 <span>Winter</span> <span>Simulation</span> <span>Conference</span> (<span>WSC</span>)</em>, 1223–34. <a href="https://doi.org/10.1109/WSC57314.2022.10015462">https://doi.org/10.1109/WSC57314.2022.10015462</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

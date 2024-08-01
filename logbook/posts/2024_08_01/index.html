@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.55">
+<meta name="generator" content="quarto-1.5.56">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -236,6 +236,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#set-up-repository" id="toc-set-up-repository" class="nav-link active" data-scroll-target="#set-up-repository">13.33-13.46: Set-up repository</a></li>
+  <li><a href="#upload-code-and-update-license" id="toc-upload-code-and-update-license" class="nav-link" data-scroll-target="#upload-code-and-update-license">14.07-14.16: Upload code and update license</a></li>
+  <li><a href="#upload-journal-article" id="toc-upload-journal-article" class="nav-link" data-scroll-target="#upload-journal-article">14.18-14.24: Upload journal article</a></li>
   <li><a href="#timings" id="toc-timings" class="nav-link" data-scroll-target="#timings">Timings</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022/edit/main/logbook/posts/2024_08_01/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -275,9 +277,31 @@ Note
 <li>Set up site on GitHub pages (<code>quarto publish gh-pages</code>)</li>
 </ul>
 </section>
+<section id="upload-code-and-update-license" class="level2">
+<h2 class="anchored" data-anchor-id="upload-code-and-update-license">14.07-14.16: Upload code and update license</h2>
+<p>We are focussed on just the CHARM model in this paper, which is a DES model. The code for this is available at <a href="https://gitlab.com/anabrunel/charm" class="uri">https://gitlab.com/anabrunel/charm</a>. They also have a dashboard at <a href="https://gitlab.com/anabrunel/charm-app" class="uri">https://gitlab.com/anabrunel/charm-app</a>, which used to be deployed on heroku although heroku is no longer active (<a href="https://github.com/djgroen/facs" class="uri">https://github.com/djgroen/facs</a>).</p>
+<p>Our focus will not be on the app, so I have copied the code from the CHARM repository. This was last updated on 17th January 2022.</p>
+<p>The study uses the 3-clause BSD license (also known as the “New BSD License” or “Modified BSD License”). The <a href="https://fossa.com/blog/open-source-software-licenses-101-bsd-3-clause-license/">requirements of this license</a> are that we include:</p>
+<ul>
+<li>The full text of the license</li>
+<li>The original copyright notice</li>
+</ul>
+<p>As such, I have update our license to the same, to be aligned with the original authors.</p>
+</section>
+<section id="upload-journal-article" class="level2">
+<h2 class="anchored" data-anchor-id="upload-journal-article">14.18-14.24: Upload journal article</h2>
+<p>The journal article is from a conference and is published on IEEE Xplore - <a href="https://doi.org/10.1109/WSC57314.2022.10015462" class="uri">https://doi.org/10.1109/WSC57314.2022.10015462</a>. It is copyright IEEE and I access it under an authorised license limited to University of Exeter. As such, I am unable to share the PDF or images from that site.</p>
+<p>The article is also available via the Brunel University Research Archive - <a href="https://bura.brunel.ac.uk/handle/2438/25912" class="uri">https://bura.brunel.ac.uk/handle/2438/25912</a>. This is open access, but only allowed for personal use:</p>
+<blockquote class="blockquote">
+<p>“Copyright © 2022 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses, in any current or future media, including reprinting/republishing this material for advertising or promotional purposes, creating new collective works, for resale or redistribution to servers or lists, or reuse of any copyrighted component of this work in other works.”</p>
+</blockquote>
+<p>The article is again available via UCL Discovery - <a href="https://discovery.ucl.ac.uk/id/eprint/10187277/" class="uri">https://discovery.ucl.ac.uk/id/eprint/10187277/</a>. This is open access, but with the copyright statement as above.</p>
+<p>Finally, it is available via the ACM Digital Library - <a href="https://dl.acm.org/doi/10.5555/3586210.3586312" class="uri">https://dl.acm.org/doi/10.5555/3586210.3586312</a>. However, this still retains copyright (“©2022 IEEE”).</p>
+<p>As such, as I understand it, since we would wish to reuse the PDF or images in another work, we are therefore unable to use them. We can only upload cited quotes, but otherwise direct readers towards the original article to view any images and to read it in full.</p>
+</section>
 <section id="timings" class="level2">
 <h2 class="anchored" data-anchor-id="timings">Timings</h2>
-<div id="f5d773d4" class="cell" data-execution_count="1">
+<div id="b917ad49" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>sys.path.append(<span class="st">'../'</span>)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> timings <span class="im">import</span> calculate_times</span>
@@ -287,14 +311,15 @@ Note
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Times from today</span></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>times <span class="op">=</span> [</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    (<span class="st">'13.33'</span>, <span class="st">'13.46'</span>)]</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>calculate_times(used_to_date, times)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    (<span class="st">'13.33'</span>, <span class="st">'13.46'</span>),</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    (<span class="st">'14.07'</span>, <span class="st">'14.16'</span>)]</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>calculate_times(used_to_date, times)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Time spent today: 13m, or 0h 13m
-Total used to date: 13m, or 0h 13m
-Time remaining: 2387m, or 39h 47m
-Used 0.5% of 40 hours max</code></pre>
+<pre><code>Time spent today: 22m, or 0h 22m
+Total used to date: 22m, or 0h 22m
+Time remaining: 2378m, or 39h 38m
+Used 0.9% of 40 hours max</code></pre>
 </div>
 </div>
 
