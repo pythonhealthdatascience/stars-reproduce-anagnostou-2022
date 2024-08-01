@@ -34,8 +34,7 @@ abstract: >-
   Discrete-Event Simulation Approach for Covid-19 Management at Regional Level.
   2022 Winter Simulation Conference (WSC), Singapore, pp. 1223-1234. (2022).
   https://doi.org/10.1109/WSC57314.2022.10015462.
-# TODO: Update license if not using MIT
-license: MIT
+license: BSD-3-Clause
 # TODO: Manually update with each GitHub release (start with 0.1.0)
-version: '1.0.4'
+version: '0.1.0'
 date-released: '2024-07-26'

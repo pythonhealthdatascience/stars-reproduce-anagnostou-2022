@@ -83,11 +83,9 @@ If you wish to cite this repository, please refer to the citation file `CITATION
 
 ## License
 
-<!-- TODO: Add license name and link -->
-This repository is licensed under the [license and link to file].
+This repository is licensed under the BSD 3-Clause License.
 
-<!-- TODO: Add license name and link (e.g. "who also licensed their work under the [MIT License](link)") -->
-This is aligned with the original study, who [license and link to file].
+This is aligned with the original study, who also licensed their work under the BSD 3-Clause License.
 
 ## Funding
 

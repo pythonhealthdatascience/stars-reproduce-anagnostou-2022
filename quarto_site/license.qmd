@@ -3,8 +3,7 @@ title: "Open Source License"
 bibliography: ../quarto_site/references.bib
 ---
 
-<!-- TODO: Update with appropriate license -->
-This repository is licensed under the [license].
+This repository is licensed under the BSD 3-Clause License.
 
 ::: {.callout-note appearance="minimal" collapse=true}
 
@@ -14,25 +13,24 @@ This repository is licensed under the [license].
 
 :::
 
-<!-- TODO: Update with appropriate license -->
-This is aligned with the original study, who shared their code under [license].
+This is aligned with the original study, who shared their code under BSD 3-Clause License.
 
 ::: {.callout-note appearance="minimal" collapse=true}
 
 ## View license
 
-<!-- TODO: Provide relative path to embed license from the original study, as done above for the main repository license -->
-[Embedded license]
+{{< include  ../original_study/charm/LICENSE >}}
 
 :::
 
-<!-- TODO: Add info about the article license -->
-The original study was published in the journal "[Journal name]". They distributed the article under [Add more details about license]
+The original study was published in the journal "IEEE Xplore". The copyright is retained by this journal. Open access versions are available with [Brunel University Research Archive](https://bura.brunel.ac.uk/handle/2438/25912) and [UCL Discovery](https://discovery.ucl.ac.uk/id/eprint/10187277/), but these are just for personal use, as in the statement below:
 
 ::: {.callout-note appearance="minimal" collapse=true}
 
-## View copyright statement from journal
+## View copyright statement
 
-<!-- TODO: Add copyright statement -->
+"Copyright © 2022 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses, in any current or future media, including reprinting/republishing this material for advertising or promotional purposes, creating new collective works, for resale or redistribution to servers or lists, or reuse of any copyrighted component of this work in other works."
+
+<https://bura.brunel.ac.uk/handle/2438/25912>
 
 :::
