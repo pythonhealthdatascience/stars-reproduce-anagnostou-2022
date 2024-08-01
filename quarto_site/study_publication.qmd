@@ -3,27 +3,23 @@ title: "Publication"
 bibliography: references.bib
 ---
 
-<!-- TODO: Remove this warning once filled out page -->
-**Please note: This is a template page and has not yet been completed**
-
-<!-- TODO: Add citation from .bib file i.e. @study_word_year -->
+@anagnostou_facs-charm_2022
 
 ## Code and data
 
-<!-- TODO: Add link to folder in repository -->
-View at: <[Link]>
+View the CHARM model at: <https://gitlab.com/anabrunel/charm>
+
+In relation to the CHARM model, the article also includes links to their app code (<https://gitlab.com/anabrunel/charm-app>) and hosted app (<https://charm-des-app.herokuapp.com/>) (although no longer available as heroku not active).
 
 ## Journal article
 
-<!-- TODO: Embed article PDF - e.g.
-<iframe width="100%" height="800" src="../original_study/article.pdf"></iframe>
+The article does not provide permissions to reshare, so cannot be uploaded.
 
-Unless the article is behind the paywall and no open-access version is available - in which case, just provide link to it -->
+If you wish to view this article, please navigate to any of:
 
-## Supplementary materials
+* IEEE Xplore: <https://doi.org/10.1109/WSC57314.2022.10015462>
+* Brunel University Research Archive: <https://bura.brunel.ac.uk/handle/2438/25912> (open access for personal use)
+* UCL Discovery: <https://discovery.ucl.ac.uk/id/eprint/10187277/> (open access for personal use)
+* ACM Digital Library: <https://dl.acm.org/doi/10.5555/3586210.3586312>
 
-<!-- TODO: Embed supplementary PDF (if relevant) -->
-
-## Sources
-
-<!-- TODO: Add links for where the above were sourced from -->
+No supplementary materials.
