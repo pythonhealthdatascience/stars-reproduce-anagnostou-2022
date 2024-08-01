@@ -2,14 +2,11 @@
 # Visit https://bit.ly/cffinit to generate yours today!
 
 cff-version: 1.2.0
-# TODO: Amend to 'STARS: Computational reproducibility of Author et al. Year'
-title: Template for computational reproducibility assessments on STARS
+title: 'STARS: Computational reproducibility of Anagnostou et al. 2022'
 message: >-
   If you use this software, please cite it using the
   metadata from this file.
 type: software
-# TODO: Amend to list of authors involved in reproduction - first, the primary
-# researcher, followed by those providing advice/feedback on the reproduction.
 authors:
   - given-names: Amy
     family-names: Heather
@@ -26,22 +23,17 @@ authors:
     email: a.l.harper@exeter.ac.uk
     affiliation: University of Exeter Business School, Exeter, UK
     orcid: 'https://orcid.org/0000-0001-5274-5037'
-  - given-names: Navonil
-    family-names: Mustafee
-    email: n.mustafee@exeter.ac.uk
-    affiliation: University of Exeter Business School, Exeter, UK
-    orcid: 'https://orcid.org/0000-0002-2204-8924'
-  - given-names: Andrew
-    family-names: Mayne
-    email: andrew.mayne@somersetft.nhs.uk
-    affiliation: Taunton and Somerset NHS Foundation Trust, UK
-    orcid: 'https://orcid.org/0000-0003-1263-2286'
-# TODO: Amend to correct repository URL
 repository-code: >-
-  https://github.com/pythonhealthdatascience/stars_reproduction_template
-# TODO: Amend to short description of repo and citation for the original study
+  https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022
 abstract: >-
-  Template repository for assessing the computational reproducibility of discrete-event simulation studies on STARS.
+  This repository forms part of work package 1 on the project STARS: Sharing
+  Tools and Artefacts for Reproducible Simulations. It assesses the
+  computational reproducibility of: Anagnostou, A. Groen, D. Taylor, S.
+  Suleimenova, D. Abubakar, N. Saha, A. Mintram, K. Ghorbani, M. Daroge, H.
+  Islam, T. Xue, Y. Okine, E. Anokye, N. FACS-CHARM: A Hybrid Agent-Based and
+  Discrete-Event Simulation Approach for Covid-19 Management at Regional Level.
+  2022 Winter Simulation Conference (WSC), Singapore, pp. 1223-1234. (2022).
+  https://doi.org/10.1109/WSC57314.2022.10015462.
 # TODO: Update license if not using MIT
 license: MIT
 # TODO: Manually update with each GitHub release (start with 0.1.0)
