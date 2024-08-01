@@ -12,6 +12,8 @@ This book captures the reproduction of:
 
 > Anagnostou, A. Groen, D. Taylor, S. Suleimenova, D. Abubakar, N. Saha, A. Mintram, K. Ghorbani, M. Daroge, H. Islam, T. Xue, Y. Okine, E. Anokye, N. **FACS-CHARM: A Hybrid Agent-Based and Discrete-Event Simulation Approach for Covid-19 Management at Regional Level**. 2022 Winter Simulation Conference (WSC), Singapore, pp. 1223-1234. (2022). <https://doi.org/10.1109/WSC57314.2022.10015462>.
 
+**Note:** This reproduction just focuses on the "CHARM" model from this paper.
+
 Use the navigation bar above to view:
 
 * **Original study** - the original study article and associated artefacts.

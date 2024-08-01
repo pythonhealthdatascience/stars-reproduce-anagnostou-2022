@@ -8,6 +8,8 @@ This repository forms part of work package 1 on the project STARS: Sharing Tools
 
 > Anagnostou, A. Groen, D. Taylor, S. Suleimenova, D. Abubakar, N. Saha, A. Mintram, K. Ghorbani, M. Daroge, H. Islam, T. Xue, Y. Okine, E. Anokye, N. **FACS-CHARM: A Hybrid Agent-Based and Discrete-Event Simulation Approach for Covid-19 Management at Regional Level**. 2022 Winter Simulation Conference (WSC), Singapore, pp. 1223-1234. (2022). <https://doi.org/10.1109/WSC57314.2022.10015462>.
 
+**Note:** This reproduction just focuses on the "CHARM" model from this paper.
+
 ## Website
 
 ⭐ **[Click here to check out the website for this repository](https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/)** ⭐
