@@ -4,26 +4,17 @@ echo: False
 bibliography: ../quarto_site/references.bib
 ---
 
-<!-- TODO: Remove this warning once filled out page -->
-**Please note: This is a template page and has not yet been completed**
+This page outlines the parts of the journal article (@anagnostou_facs-charm_2022) which we will attempt to reproduce.
 
-<!-- TODO: Use skeleton to create page describing scope -->
-
-<!-- NOTE: If you do not have a license allowing you to upload and reuse images from the article, then you should describe them below, and direct the reader to a link to the article -->
-
-This page outlines the parts of the journal article which we will attempt to reproduce.
-
-All images and quotes on this page are sourced from <!-- TODO: Add citation to original study -->
+As the copyright of the article belongs to the journal (without permissions to freely share images from the article), I have simply provided quotations from the figure captions below. You will need to navigate to the original paper to view the items.
 
 ## Within scope
 
 ::: {.callout-note appearance="minimal" collapse=true}
 
-## Figure X
+## Figure 3
 
-[Figure with full legend from paper]
-<!-- e.g.
-![Figure 2. "Patient state over time by unit. The patient population progresses through infection over three months (with 80% infected). The bold line shows the median results of 30 trials, and the fainter lines show the minimum and maximum from the 30 trials." @allen_simulation_2020](../original_study/article_fig2.png){width=80%}-->
+Figure 3. "CHARM example output. Graphs a, b and c show the mean value of elective beds capacity and availability (a) and 95% confidence intervals (b) and (c), respectively. Graphs d, e and f show the mean value of COVID-19 beds capacity and availability (d) and 95% confidence intervals (e) and (f), respectively." @anagnostou_facs-charm_2022
 
 :::
 
@@ -31,10 +22,42 @@ All images and quotes on this page are sourced from <!-- TODO: Add citation to o
 
 ::: {.callout-note appearance="minimal" collapse=true}
 
-## Table X
+## Figure 1
 
-[Explanation of why it is outside scope]
+Output from FACS (agent-based simulation).
 
-[Display table, including full legend from paper]
+Figure 1. "FACS example output daily cases (a) and daily hospitalizations (b)". @anagnostou_facs-charm_2022
+
+:::
+
+::: {.callout-note appearance="minimal" collapse=true}
+
+## Figure 2
+
+Figure 2. "CHARM patient flow diagram". @anagnostou_facs-charm_2022
+
+:::
+
+::: {.callout-note appearance="minimal" collapse=true}
+
+## Table 1
+
+Table 1. "CHARM example input parameters". @anagnostou_facs-charm_2022
+
+:::
+
+::: {.callout-note appearance="minimal" collapse=true}
+
+## Figure 4
+
+Figure 4. "Hybrid FACS-CHARM data exchange". @anagnostou_facs-charm_2022
+
+:::
+
+::: {.callout-note appearance="minimal" collapse=true}
+
+## Figure 5
+
+Figure 5. "CHARM (a) and FACS (b) dashboards". @anagnostou_facs-charm_2022
 
 :::
