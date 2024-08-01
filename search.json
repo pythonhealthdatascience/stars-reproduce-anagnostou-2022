@@ -74,7 +74,7 @@
     "href": "logbook/posts/2024_08_01/index.html#upload-code-and-update-license",
     "title": "Day 1",
     "section": "14.07-14.16: Upload code and update license",
-    "text": "14.07-14.16: Upload code and update license\nWe are focussed on just the CHARM model in this paper, which is a DES model. The code for this is available at https://gitlab.com/anabrunel/charm. They also have a dashboard at https://gitlab.com/anabrunel/charm-app, which used to be deployed on heroku although heroku is no longer active (https://github.com/djgroen/facs).\nOur focus will not be on the app, so I have copied the code from the CHARM repository. This was last updated on 17th January 2022.\nThe study uses the 3-clause BSD license (also known as the “New BSD License” or “Modified BSD License”). The requirements of this license are that we include:\n\nThe full text of the license\nThe original copyright notice\n\nAs such, I have update our license to the same, to be aligned with the original authors."
+    "text": "14.07-14.16: Upload code and update license\nWe are focussed on just the CHARM model in this paper, which is a DES model. The code for this is available at https://gitlab.com/anabrunel/charm. They also have a dashboard at https://gitlab.com/anabrunel/charm-app, which used to be deployed on heroku although heroku is no longer active (https://charm-des-app.herokuapp.com/).\nOur focus will not be on the app, so I have copied the code from the CHARM repository. This was last updated on 17th January 2022.\nThe study uses the 3-clause BSD license (also known as the “New BSD License” or “Modified BSD License”). The requirements of this license are that we include:\n\nThe full text of the license\nThe original copyright notice\n\nAs such, I have update our license to the same, to be aligned with the original authors."
   },
   {
     "objectID": "logbook/posts/2024_08_01/index.html#upload-journal-article",
@@ -84,11 +84,25 @@
     "text": "14.18-14.24: Upload journal article\nThe journal article is from a conference and is published on IEEE Xplore - https://doi.org/10.1109/WSC57314.2022.10015462. It is copyright IEEE and I access it under an authorised license limited to University of Exeter. As such, I am unable to share the PDF or images from that site.\nThe article is also available via the Brunel University Research Archive - https://bura.brunel.ac.uk/handle/2438/25912. This is open access, but only allowed for personal use:\n\n“Copyright © 2022 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses, in any current or future media, including reprinting/republishing this material for advertising or promotional purposes, creating new collective works, for resale or redistribution to servers or lists, or reuse of any copyrighted component of this work in other works.”\n\nThe article is again available via UCL Discovery - https://discovery.ucl.ac.uk/id/eprint/10187277/. This is open access, but with the copyright statement as above.\nFinally, it is available via the ACM Digital Library - https://dl.acm.org/doi/10.5555/3586210.3586312. However, this still retains copyright (“©2022 IEEE”).\nAs such, as I understand it, since we would wish to reuse the PDF or images in another work, we are therefore unable to use them. We can only upload cited quotes, but otherwise direct readers towards the original article to view any images and to read it in full."
   },
   {
+    "objectID": "logbook/posts/2024_08_01/index.html#complete-quarto-page-on-study",
+    "href": "logbook/posts/2024_08_01/index.html#complete-quarto-page-on-study",
+    "title": "Day 1",
+    "section": "14.26-14.30: Complete quarto page on study",
+    "text": "14.26-14.30: Complete quarto page on study\nCompleted study_publication.qmd, with links to original article in place of uploads."
+  },
+  {
+    "objectID": "logbook/posts/2024_08_01/index.html#read-article-and-consensus-on-scope.",
+    "href": "logbook/posts/2024_08_01/index.html#read-article-and-consensus-on-scope.",
+    "title": "Day 1",
+    "section": "14.53-15.06: Read article and consensus on scope.",
+    "text": "14.53-15.06: Read article and consensus on scope.\nNote that this is a paper presenting the approach, and does not go into detail studying specific use cases or presenting experimenting results. As such, we anticipate a small scope for this reproduction. We were aware of this prior to choosing this article, as they do provide some example input parameters and outputs.\nI only identified one item for the scope of this paper: Figure 3.\nI updated scope.qmd.\nThis was discussed with Tom, who agreed."
+  },
+  {
     "objectID": "logbook/posts/2024_08_01/index.html#timings",
     "href": "logbook/posts/2024_08_01/index.html#timings",
     "title": "Day 1",
     "section": "Timings",
-    "text": "Timings\n\nimport sys\nsys.path.append('../')\nfrom timings import calculate_times\n\n# Minutes used prior to today\nused_to_date = 0\n\n# Times from today\ntimes = [\n    ('13.33', '13.46'),\n    ('14.07', '14.16')]\n\ncalculate_times(used_to_date, times)\n\nTime spent today: 22m, or 0h 22m\nTotal used to date: 22m, or 0h 22m\nTime remaining: 2378m, or 39h 38m\nUsed 0.9% of 40 hours max"
+    "text": "Timings\n\nimport sys\nsys.path.append('../')\nfrom timings import calculate_times\n\n# Minutes used prior to today\nused_to_date = 0\n\n# Times from today\ntimes = [\n    ('13.33', '13.46'),\n    ('14.07', '14.16'),\n    ('14.18', '14.24'),\n    ('14.26', '14.30'),\n    ('14.53', '15.02')]\n\ncalculate_times(used_to_date, times)\n\nTime spent today: 41m, or 0h 41m\nTotal used to date: 41m, or 0h 41m\nTime remaining: 2359m, or 39h 19m\nUsed 1.7% of 40 hours max"
   },
   {
     "objectID": "CONTRIBUTING.html",
@@ -116,21 +130,21 @@
     "href": "evaluation/scope.html",
     "title": "Scope",
     "section": "",
-    "text": "Please note: This is a template page and has not yet been completed\nThis page outlines the parts of the journal article which we will attempt to reproduce.\nAll images and quotes on this page are sourced from"
+    "text": "This page outlines the parts of the journal article (Anagnostou et al. (2022)) which we will attempt to reproduce.\nAs the copyright of the article belongs to the journal (without permissions to freely share images from the article), I have simply provided quotations from the figure captions below. You will need to navigate to the original paper to view the items."
   },
   {
     "objectID": "evaluation/scope.html#within-scope",
     "href": "evaluation/scope.html#within-scope",
     "title": "Scope",
     "section": "Within scope",
-    "text": "Within scope\n\n\n\n\n\n\nFigure X\n\n\n\n\n\n[Figure with full legend from paper]"
+    "text": "Within scope\n\n\n\n\n\n\nFigure 3\n\n\n\n\n\nFigure 3. “CHARM example output. Graphs a, b and c show the mean value of elective beds capacity and availability (a) and 95% confidence intervals (b) and (c), respectively. Graphs d, e and f show the mean value of COVID-19 beds capacity and availability (d) and 95% confidence intervals (e) and (f), respectively.” Anagnostou et al. (2022)"
   },
   {
     "objectID": "evaluation/scope.html#outside-scope",
     "href": "evaluation/scope.html#outside-scope",
     "title": "Scope",
     "section": "Outside scope",
-    "text": "Outside scope\n\n\n\n\n\n\nTable X\n\n\n\n\n\n[Explanation of why it is outside scope]\n[Display table, including full legend from paper]"
+    "text": "Outside scope\n\n\n\n\n\n\nFigure 1\n\n\n\n\n\nOutput from FACS (agent-based simulation).\nFigure 1. “FACS example output daily cases (a) and daily hospitalizations (b)”. Anagnostou et al. (2022)\n\n\n\n\n\n\n\n\n\nFigure 2\n\n\n\n\n\nFigure 2. “CHARM patient flow diagram”. Anagnostou et al. (2022)\n\n\n\n\n\n\n\n\n\nTable 1\n\n\n\n\n\nTable 1. “CHARM example input parameters”. Anagnostou et al. (2022)\n\n\n\n\n\n\n\n\n\nFigure 4\n\n\n\n\n\nFigure 4. “Hybrid FACS-CHARM data exchange”. Anagnostou et al. (2022)\n\n\n\n\n\n\n\n\n\nFigure 5\n\n\n\n\n\nFigure 5. “CHARM (a) and FACS (b) dashboards”. Anagnostou et al. (2022)"
   },
   {
     "objectID": "evaluation/artefacts.html",

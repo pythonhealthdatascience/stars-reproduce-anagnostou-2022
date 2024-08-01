@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -195,12 +215,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<!-- TODO: Remove this warning once filled out page -->
-<p><strong>Please note: This is a template page and has not yet been completed</strong></p>
-<!-- TODO: Use skeleton to create page describing scope -->
-<!-- NOTE: If you do not have a license allowing you to upload and reuse images from the article, then you should describe them below, and direct the reader to a link to the article -->
-<p>This page outlines the parts of the journal article which we will attempt to reproduce.</p>
-<p>All images and quotes on this page are sourced from <!-- TODO: Add citation to original study --></p>
+<p>This page outlines the parts of the journal article (<span class="citation" data-cites="anagnostou_facs-charm_2022">Anagnostou et al. (<a href="#ref-anagnostou_facs-charm_2022" role="doc-biblioref">2022</a>)</span>) which we will attempt to reproduce.</p>
+<p>As the copyright of the article belongs to the journal (without permissions to freely share images from the article), I have simply provided quotations from the figure captions below. You will need to navigate to the original paper to view the items.</p>
 <section id="within-scope" class="level2">
 <h2 class="anchored" data-anchor-id="within-scope">Within scope</h2>
 <div class="callout callout-style-simple callout-note no-icon callout-titled">
@@ -209,14 +225,13 @@ ul.task-list li input[type="checkbox"] {
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Figure X
+Figure 3
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>[Figure with full legend from paper] <!-- e.g.
-![Figure 2. "Patient state over time by unit. The patient population progresses through infection over three months (with 80% infected). The bold line shows the median results of 30 trials, and the fainter lines show the minimum and maximum from the 30 trials." @allen_simulation_2020](../original_study/article_fig2.png){width=80%}--></p>
+<p>Figure 3. “CHARM example output. Graphs a, b and c show the mean value of elective beds capacity and availability (a) and 95% confidence intervals (b) and (c), respectively. Graphs d, e and f show the mean value of COVID-19 beds capacity and availability (d) and 95% confidence intervals (e) and (f), respectively.” <span class="citation" data-cites="anagnostou_facs-charm_2022">Anagnostou et al. (<a href="#ref-anagnostou_facs-charm_2022" role="doc-biblioref">2022</a>)</span></p>
 </div>
 </div>
 </div>
@@ -229,22 +244,91 @@ Figure X
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Table X
+Figure 1
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>[Explanation of why it is outside scope]</p>
-<p>[Display table, including full legend from paper]</p>
+<p>Output from FACS (agent-based simulation).</p>
+<p>Figure 1. “FACS example output daily cases (a) and daily hospitalizations (b)”. <span class="citation" data-cites="anagnostou_facs-charm_2022">Anagnostou et al. (<a href="#ref-anagnostou_facs-charm_2022" role="doc-biblioref">2022</a>)</span></p>
 </div>
 </div>
 </div>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Figure 2
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Figure 2. “CHARM patient flow diagram”. <span class="citation" data-cites="anagnostou_facs-charm_2022">Anagnostou et al. (<a href="#ref-anagnostou_facs-charm_2022" role="doc-biblioref">2022</a>)</span></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Table 1
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Table 1. “CHARM example input parameters”. <span class="citation" data-cites="anagnostou_facs-charm_2022">Anagnostou et al. (<a href="#ref-anagnostou_facs-charm_2022" role="doc-biblioref">2022</a>)</span></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Figure 4
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Figure 4. “Hybrid FACS-CHARM data exchange”. <span class="citation" data-cites="anagnostou_facs-charm_2022">Anagnostou et al. (<a href="#ref-anagnostou_facs-charm_2022" role="doc-biblioref">2022</a>)</span></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Figure 5
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Figure 5. “CHARM (a) and FACS (b) dashboards”. <span class="citation" data-cites="anagnostou_facs-charm_2022">Anagnostou et al. (<a href="#ref-anagnostou_facs-charm_2022" role="doc-biblioref">2022</a>)</span></p>
+</div>
+</div>
+</div>
+
 
 
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-anagnostou_facs-charm_2022" class="csl-entry" role="listitem">
+Anagnostou, Anastasia, Derek Groen, Simon J. E. Taylor, Diana Suleimenova, Nura Abubakar, Arindam Saha, Kate Mintram, et al. 2022. <span>“<span>FACS</span>-<span>CHARM</span>: <span>A</span> <span>Hybrid</span> <span>Agent</span>-<span>Based</span> and <span>Discrete</span>-<span>Event</span> <span>Simulation</span> <span>Approach</span> for <span>Covid</span>-19 <span>Management</span> at <span>Regional</span> <span>Level</span>.”</span> In <em>2022 <span>Winter</span> <span>Simulation</span> <span>Conference</span> (<span>WSC</span>)</em>, 1223–34. <a href="https://doi.org/10.1109/WSC57314.2022.10015462">https://doi.org/10.1109/WSC57314.2022.10015462</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
