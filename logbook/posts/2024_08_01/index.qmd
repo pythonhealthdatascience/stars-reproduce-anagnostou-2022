@@ -25,7 +25,7 @@ TBC. Total time used: Xh Xm (X%)
 
 ## 14.07-14.16: Upload code and update license
 
-We are focussed on just the CHARM model in this paper, which is a DES model. The code for this is available at <https://gitlab.com/anabrunel/charm>. They also have a dashboard at <https://gitlab.com/anabrunel/charm-app>, which used to be deployed on heroku although heroku is no longer active (<https://github.com/djgroen/facs>).
+We are focussed on just the CHARM model in this paper, which is a DES model. The code for this is available at <https://gitlab.com/anabrunel/charm>. They also have a dashboard at <https://gitlab.com/anabrunel/charm-app>, which used to be deployed on heroku although heroku is no longer active (<https://charm-des-app.herokuapp.com/>).
 
 Our focus will not be on the app, so I have copied the code from the CHARM repository. This was last updated on 17th January 2022.
 
@@ -50,6 +50,20 @@ Finally, it is available via the ACM Digital Library - <https://dl.acm.org/doi/1
 
 As such, as I understand it, since we would wish to reuse the PDF or images in another work, we are therefore unable to use them. We can only upload cited quotes, but otherwise direct readers towards the original article to view any images and to read it in full.
 
+## 14.26-14.30: Complete quarto page on study
+
+Completed `study_publication.qmd`, with links to original article in place of uploads.
+
+## 14.53-15.06: Read article and consensus on scope.
+
+Note that this is a paper presenting the approach, and does not go into detail studying specific use cases or presenting experimenting results. As such, we anticipate a small scope for this reproduction. We were aware of this prior to choosing this article, as they do provide some example input parameters and outputs.
+
+I only identified one item for the scope of this paper: Figure 3.
+
+I updated `scope.qmd`.
+
+This was discussed with Tom, who agreed.
+
 ## Timings
 
 ```{python}
@@ -63,7 +77,10 @@ used_to_date = 0
 # Times from today
 times = [
     ('13.33', '13.46'),
-    ('14.07', '14.16')]
+    ('14.07', '14.16'),
+    ('14.18', '14.24'),
+    ('14.26', '14.30'),
+    ('14.53', '15.02')]
 
 calculate_times(used_to_date, times)
 ```
