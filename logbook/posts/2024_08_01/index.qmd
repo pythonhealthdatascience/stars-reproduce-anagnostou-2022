@@ -23,6 +23,33 @@ TBC. Total time used: Xh Xm (X%)
     * `_quarto.yml`
 * Set up site on GitHub pages (`quarto publish gh-pages`)
 
+## 14.07-14.16: Upload code and update license
+
+We are focussed on just the CHARM model in this paper, which is a DES model. The code for this is available at <https://gitlab.com/anabrunel/charm>. They also have a dashboard at <https://gitlab.com/anabrunel/charm-app>, which used to be deployed on heroku although heroku is no longer active (<https://github.com/djgroen/facs>).
+
+Our focus will not be on the app, so I have copied the code from the CHARM repository. This was last updated on 17th January 2022.
+
+The study uses the 3-clause BSD license (also known as the "New BSD License" or "Modified BSD License"). The [requirements of this license](https://fossa.com/blog/open-source-software-licenses-101-bsd-3-clause-license/) are that we include:
+
+* The full text of the license
+* The original copyright notice
+
+As such, I have update our license to the same, to be aligned with the original authors.
+
+## 14.18-14.24: Upload journal article
+
+The journal article is from a conference and is published on IEEE Xplore - <https://doi.org/10.1109/WSC57314.2022.10015462>. It is copyright IEEE and I access it under an authorised license limited to University of Exeter. As such, I am unable to share the PDF or images from that site.
+
+The article is also available via the Brunel University Research Archive - <https://bura.brunel.ac.uk/handle/2438/25912>. This is open access, but only allowed for personal use:
+
+> "Copyright © 2022 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses, in any current or future media, including reprinting/republishing this material for advertising or promotional purposes, creating new collective works, for resale or redistribution to servers or lists, or reuse of any copyrighted component of this work in other works."
+
+The article is again available via UCL Discovery - <https://discovery.ucl.ac.uk/id/eprint/10187277/>. This is open access, but with the copyright statement as above.
+
+Finally, it is available via the ACM Digital Library - <https://dl.acm.org/doi/10.5555/3586210.3586312>. However, this still retains copyright ("©2022 IEEE").
+
+As such, as I understand it, since we would wish to reuse the PDF or images in another work, we are therefore unable to use them. We can only upload cited quotes, but otherwise direct readers towards the original article to view any images and to read it in full.
+
 ## Timings
 
 ```{python}
@@ -35,7 +62,8 @@ used_to_date = 0
 
 # Times from today
 times = [
-    ('13.33', '13.46')]
+    ('13.33', '13.46'),
+    ('14.07', '14.16')]
 
 calculate_times(used_to_date, times)
 ```
