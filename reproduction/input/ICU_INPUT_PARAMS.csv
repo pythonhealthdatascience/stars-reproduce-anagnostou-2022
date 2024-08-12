@@ -1,0 +1,2 @@
+em_min,em_max,em_mode,el_min,el_max,el_mode,emLoS_min,emLoS_max,emLoS_mode,emrLoS_min,emrLoS_max,emrLoS_mode,elLoS_min,elLoS_max,elLoS_mode,elrLoS_min,elrLoS_max,elrLoS_mode,cLoS_min,cLoS_max,cLoS_mode,crLoS_min,crLoS_max,crLoS_mode,em_mortality,emr_mortality,el_mortality,elr_mortality,c_mortality,cr_mortality,upThreshold,loThreshold,replications
+1,20,3,0,8,7,5,10,7,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,0.1,0,0.1,0,0.1,0,30,29,5
