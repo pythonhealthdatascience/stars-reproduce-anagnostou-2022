@@ -1,0 +1,6 @@
+name: anagnostou2022
+channels:
+  - defaults
+dependencies:
+  - simpy=4.0.1
+  - python=3.9.10
