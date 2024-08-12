@@ -37,4 +37,4 @@ abstract: >-
 license: BSD-3-Clause
 # TODO: Manually update with each GitHub release (start with 0.1.0)
 version: '0.1.0'
-date-released: '2024-07-26'
+date-released: '2024-08-12'
