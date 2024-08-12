@@ -10,7 +10,7 @@ As the copyright of the article belongs to the journal (without permissions to f
 
 ## Within scope
 
-::: {.callout-note appearance="minimal" collapse=true}
+::: {.callout-note appearance="minimal" collapse=false}
 
 ## Figure 3
 
@@ -20,7 +20,7 @@ Figure 3. "CHARM example output. Graphs a, b and c show the mean value of electi
 
 ## Outside scope
 
-::: {.callout-note appearance="minimal" collapse=true}
+::: {.callout-note appearance="minimal" collapse=false}
 
 ## Figure 1
 
@@ -30,7 +30,7 @@ Figure 1. "FACS example output daily cases (a) and daily hospitalizations (b)". 
 
 :::
 
-::: {.callout-note appearance="minimal" collapse=true}
+::: {.callout-note appearance="minimal" collapse=false}
 
 ## Figure 2
 
@@ -38,7 +38,7 @@ Figure 2. "CHARM patient flow diagram". @anagnostou_facs-charm_2022
 
 :::
 
-::: {.callout-note appearance="minimal" collapse=true}
+::: {.callout-note appearance="minimal" collapse=false}
 
 ## Table 1
 
@@ -46,7 +46,7 @@ Table 1. "CHARM example input parameters". @anagnostou_facs-charm_2022
 
 :::
 
-::: {.callout-note appearance="minimal" collapse=true}
+::: {.callout-note appearance="minimal" collapse=false}
 
 ## Figure 4
 
@@ -54,7 +54,7 @@ Figure 4. "Hybrid FACS-CHARM data exchange". @anagnostou_facs-charm_2022
 
 :::
 
-::: {.callout-note appearance="minimal" collapse=true}
+::: {.callout-note appearance="minimal" collapse=false}
 
 ## Figure 5
 
