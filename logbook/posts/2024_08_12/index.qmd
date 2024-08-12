@@ -11,3 +11,13 @@ bibliography: ../../../quarto_site/references.bib
 TBC. Total time used: TBCh TBCm (TBC%)
 
 :::
+
+## 15.44-15.50: Archive scope
+
+Having received consensus on scope, I can now archive it.
+
+* Updated `CITATION.cff` version number and date
+* Add entry to `CHANGELOG.md`
+* Set to sync on Zenodo (already activated by Tom)
+* Create GitHub release
+* Add DOI to `README.md`
