@@ -252,6 +252,13 @@
     "text": "Note\n\n\n\nTBC. Total time used: TBCh TBCm (TBC%)"
   },
   {
+    "objectID": "logbook/posts/2024_08_12/index.html#archive-scope",
+    "href": "logbook/posts/2024_08_12/index.html#archive-scope",
+    "title": "Day 2",
+    "section": "15.44-15.50: Archive scope",
+    "text": "15.44-15.50: Archive scope\nHaving received consensus on scope, I can now archive it.\n\nUpdated CITATION.cff version number and date\nAdd entry to CHANGELOG.md\nSet to sync on Zenodo (already activated by Tom)\nCreate GitHub release\nAdd DOI to README.md"
+  },
+  {
     "objectID": "evaluation/reporting.html",
     "href": "evaluation/reporting.html",
     "title": "Reporting guidelines",
