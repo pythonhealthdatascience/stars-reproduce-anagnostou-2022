@@ -1,0 +1,13 @@
+---
+title: "Day 2"
+author: "Amy Heather"
+date: "2024-08-12"
+categories: [reproduction]
+bibliography: ../../../quarto_site/references.bib
+---
+
+::: {.callout-note}
+
+TBC. Total time used: TBCh TBCm (TBC%)
+
+:::
