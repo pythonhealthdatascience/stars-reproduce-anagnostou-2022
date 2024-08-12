@@ -12,7 +12,7 @@ Set-up repository, read article and defined scope. Total time used: 0h 45m (1.9%
 
 :::
 
-## 13.33-13.46: Set-up repository
+## 13.33-13.46: Set-up repository and email authors
 
 * Create repository from template
 * Set up environment
@@ -22,6 +22,8 @@ Set-up repository, read article and defined scope. Total time used: 0h 45m (1.9%
     * `CITATION.cff`
     * `_quarto.yml`
 * Set up site on GitHub pages (`quarto publish gh-pages`)
+
+Then emailed the authors to inform about the study (as per protocol).
 
 ## 14.07-14.16: Upload code and update license
 

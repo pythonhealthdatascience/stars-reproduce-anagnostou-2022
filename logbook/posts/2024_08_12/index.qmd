@@ -21,3 +21,52 @@ Having received consensus on scope, I can now archive it.
 * Set to sync on Zenodo (already activated by Tom)
 * Create GitHub release
 * Add DOI to `README.md`
+
+## 15.58-16.11: Look over code and create environment
+
+Their README provides instructions to run the code - installing simpy, and then running `python3 main.py -z ZONES.csv -p ICU_INPUT_PARAMS.csv -c DAILY_ARRIVALS.csv`,  noting that example input files are available in `input/`.
+
+A dockerfile is also provided. This installs Python 3.9 and the dependencies from `requirements.txt` (which just lists `simpy`, no version).
+
+`CHARM_INFO.md` is a data dictionary, explaining info provided to the model and the input parameter columns and so on.
+
+`main.py` runs `utils.args()` and `model.runSim()`.
+
+To identify versions, I looked at the dates of the article and repository...
+
+* Conference 11-14 Dec 2022
+* Added to IEEE Explore 23 Jan 2023
+* GitHub repository created and last updated on 17 Jan 2022
+
+Looking at Python and Simpy...
+
+* https://peps.python.org/pep-0596/ - latest python 3.9 version possible would be 3.9.10 (14 Jan 2022)
+* https://pypi.org/project/simpy/#history - latest simpy possible would be 4.0.1 (15 Apr 2020)
+
+I create a conda environment in `reproduction/` (which has a benefit over the virtual environment of also including the python version). I then built this using mamba (`mamba env create --name anagnostou2022 --file environment.yml`).
+
+## 16.13-16.24: Run code
+
+Copied relevant files to `reproduction/` then, following their instruction, ran:
+
+```
+python3 main.py -z input/ZONES.csv -p input/ICU_INPUT_PARAM
+S.csv -c input/DAILY_ARRIVALS.csv
+```
+
+This ran quickly and without issue, producing identical results as provided in `OUT_STATS.csv`. This is a pretty simple, small, logical file.
+
+I had a look through the code again to see if I could spot anything to create the plot, but didn't find anything. I then had a look at the other directory they mention which creates the dashboard, `https://gitlab.com/anabrunel/charm-app`. This has:
+
+* Additional requirements - confirming simpy 4.0.1 was correct
+* Extra file `charm_app.py` - but looking through the code, this produces scatter plots with `create_traces()` which look like they might be Figure 5A (but not in scope)
+
+As I cannot spot any other plotting functions, I'm assuming that I will need to write these from scratch.
+
+## 16.29-17.00: Write plotting function
+
+Created `reproduction.ipynb`, which required adding `ipykernel` and `pandas` and `matplotlib` to the environment.
+
+The column names in the model output csv were easy to interpret, and so I could identify the appropriate columns needed for the plots.
+
+Ran out of time to finish today.
