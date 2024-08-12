@@ -202,6 +202,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <h1 class="title">Day 1</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">setup</div>
+                <div class="quarto-category">read</div>
+                <div class="quarto-category">scope</div>
               </div>
                   </div>
   </div>
@@ -261,7 +263,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>TBC. Total time used: Xh Xm (X%)</p>
+<p>Set-up repository, read article and defined scope. Total time used: 0h 45m (1.9%)</p>
 </div>
 </div>
 <section id="set-up-repository" class="level2">
@@ -307,14 +309,14 @@ Note
 </section>
 <section id="read-article-and-consensus-on-scope." class="level2">
 <h2 class="anchored" data-anchor-id="read-article-and-consensus-on-scope.">14.53-15.06: Read article and consensus on scope.</h2>
-<p>Note that this is a paper presenting the approach, and does not go into detail studying specific use cases or presenting experimenting results. As such, we anticipate a small scope for this reproduction. We were aware of this prior to choosing this article, as they do provide some example input parameters and outputs.</p>
+<p>Note that this is a paper presenting the approach, and does not go into detail studying specific use cases or presenting experimenting results. As such, we anticipate a small scope for this reproduction. We were aware of this prior to choosing this article. However, we still included it as they do provide some example input parameters and outputs.</p>
 <p>I only identified one item for the scope of this paper: Figure 3.</p>
 <p>I updated <code>scope.qmd</code>.</p>
 <p>This was discussed with Tom, who agreed.</p>
 </section>
 <section id="timings" class="level2">
 <h2 class="anchored" data-anchor-id="timings">Timings</h2>
-<div id="fcdaac8c" class="cell" data-execution_count="1">
+<div id="100de57f" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>sys.path.append(<span class="st">'../'</span>)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> timings <span class="im">import</span> calculate_times</span>
@@ -328,14 +330,14 @@ Note
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    (<span class="st">'14.07'</span>, <span class="st">'14.16'</span>),</span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    (<span class="st">'14.18'</span>, <span class="st">'14.24'</span>),</span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    (<span class="st">'14.26'</span>, <span class="st">'14.30'</span>),</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    (<span class="st">'14.53'</span>, <span class="st">'15.02'</span>)]</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    (<span class="st">'14.53'</span>, <span class="st">'15.06'</span>)]</span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>calculate_times(used_to_date, times)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Time spent today: 41m, or 0h 41m
-Total used to date: 41m, or 0h 41m
-Time remaining: 2359m, or 39h 19m
-Used 1.7% of 40 hours max</code></pre>
+<pre><code>Time spent today: 45m, or 0h 45m
+Total used to date: 45m, or 0h 45m
+Time remaining: 2355m, or 39h 15m
+Used 1.9% of 40 hours max</code></pre>
 </div>
 </div>
 
