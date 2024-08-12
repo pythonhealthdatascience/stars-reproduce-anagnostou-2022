@@ -2,5 +2,8 @@ name: anagnostou2022
 channels:
   - defaults
 dependencies:
-  - simpy=4.0.1
+  - ipykernel=6.28.0
+  - matplotlib=3.8.4
+  - pandas=2.2.2
   - python=3.9.10
+  - simpy=4.0.1
