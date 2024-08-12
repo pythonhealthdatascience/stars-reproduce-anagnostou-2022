@@ -63,6 +63,20 @@
     "text": "Set up repository and defined scope of reproduction.\n\n\n\nCode from original study\nArticle and supplementary materials\nPlanned scope for reproduction\n\n\n\n\n\nModified template to be about Anagnostou et al. 2022"
   },
   {
+    "objectID": "reproduction/CHARM_INFO.html",
+    "href": "reproduction/CHARM_INFO.html",
+    "title": "CHARM Info",
+    "section": "",
+    "text": "Time unit: Day\nAdmissions: three types of admissions\nEmergency: triangular distribution\nElective: triangular distribution\nCovid-19 positive: CSV file\nZones: Zones can be any of:\n\n\n\nZone type\nShort\nCode\n\n\n\n\nEmergency ICU\nEM\n1\n\n\nEmergency Recovery\nEMR\n2\n\n\nElective ICU\nEL\n3\n\n\nElective Recovery\nELR\n4\n\n\nCovid-19 ICU\nC\n5\n\n\nCovid-19 Recovery\nCR\n6\n\n\n\nEach zone can be defined as COVID, EMERGENCY, ELECTIVE and respective RECOVERY\nIF COVID occupancy &gt; UPPER_THRESHOLD, EMERGENCY/ELECTIVE BECOMES COVID\nIF COVID occupancy &lt; LOWER_THRESHOLD, reverse EMERGENCY/ELECTIVE\nRun length: As many days as the entries in DAILY_ARRIVALS.csv\n\n\n\n\nReplications: Number of simulation replications {integer}\nArrivals\n\nEmergency daily arrivals: Three fields {min, max, mode}\nElective daily arrivals: Three fields {min, max, mode}\n\nLength of Stay (in days):\n\nEmergency ICU LoS: Three fields {min, max, mode}\nElective ICU LoS: Three fields {min, max, mode}\nCovid-19 ICU Los: Three fields {min, max, mode}\nEmergency recovery LoS: Three fields {min, max, mode}\nElective recovery LoS: Three fields {min, max, mode}\nCovid-19 recovery Los : Three fields {min, max, mode}\n\nMortality (probability)\n\nEmergency ICU mortality: One field {0-1}\nElective ICU mortality: One field {0-1}\nCovid-19 ICU mortality: One field {0-1}\nEmergency recovery mortality: One field {0-1}\nElective recovery mortality: One field {0-1}\nCovid-19 recovery mortality: One field {0-1}\n\nCovid ICU wards occupancy threshold (percentage)\n\nUpper threshold: One field {0-100}\nLower threshold: One field {0-100}\n\n\n\n\nID: Integer in ascending order starting from 1\nType: Integer {1-6}\nCapacity: Integer {number of beds in the zone}\n\n\n\nIndex: Integer in ascending order starting from 0\nDay: Can be any e.g., Integer or Date\nCovid-19 positive: Integer {number of Covid-19 positive patients}"
+  },
+  {
+    "objectID": "reproduction/CHARM_INFO.html#input-parameters",
+    "href": "reproduction/CHARM_INFO.html#input-parameters",
+    "title": "CHARM Info",
+    "section": "",
+    "text": "Replications: Number of simulation replications {integer}\nArrivals\n\nEmergency daily arrivals: Three fields {min, max, mode}\nElective daily arrivals: Three fields {min, max, mode}\n\nLength of Stay (in days):\n\nEmergency ICU LoS: Three fields {min, max, mode}\nElective ICU LoS: Three fields {min, max, mode}\nCovid-19 ICU Los: Three fields {min, max, mode}\nEmergency recovery LoS: Three fields {min, max, mode}\nElective recovery LoS: Three fields {min, max, mode}\nCovid-19 recovery Los : Three fields {min, max, mode}\n\nMortality (probability)\n\nEmergency ICU mortality: One field {0-1}\nElective ICU mortality: One field {0-1}\nCovid-19 ICU mortality: One field {0-1}\nEmergency recovery mortality: One field {0-1}\nElective recovery mortality: One field {0-1}\nCovid-19 recovery mortality: One field {0-1}\n\nCovid ICU wards occupancy threshold (percentage)\n\nUpper threshold: One field {0-100}\nLower threshold: One field {0-100}\n\n\n\n\nID: Integer in ascending order starting from 1\nType: Integer {1-6}\nCapacity: Integer {number of beds in the zone}\n\n\n\nIndex: Integer in ascending order starting from 0\nDay: Can be any e.g., Integer or Date\nCovid-19 positive: Integer {number of Covid-19 positive patients}"
+  },
+  {
     "objectID": "evaluation/artefacts.html",
     "href": "evaluation/artefacts.html",
     "title": "STARS framework",
@@ -119,11 +133,11 @@
     "text": "Note\n\n\n\nSet-up repository, read article and defined scope. Total time used: 0h 45m (1.9%)"
   },
   {
-    "objectID": "logbook/posts/2024_08_01/index.html#set-up-repository",
-    "href": "logbook/posts/2024_08_01/index.html#set-up-repository",
+    "objectID": "logbook/posts/2024_08_01/index.html#set-up-repository-and-email-authors",
+    "href": "logbook/posts/2024_08_01/index.html#set-up-repository-and-email-authors",
     "title": "Day 1",
-    "section": "13.33-13.46: Set-up repository",
-    "text": "13.33-13.46: Set-up repository\n\nCreate repository from template\nSet up environment\nModified template files:\n\nREADME.md\nquarto site index.qmd\nCITATION.cff\n_quarto.yml\n\nSet up site on GitHub pages (quarto publish gh-pages)"
+    "section": "13.33-13.46: Set-up repository and email authors",
+    "text": "13.33-13.46: Set-up repository and email authors\n\nCreate repository from template\nSet up environment\nModified template files:\n\nREADME.md\nquarto site index.qmd\nCITATION.cff\n_quarto.yml\n\nSet up site on GitHub pages (quarto publish gh-pages)\n\nThen emailed the authors to inform about the study (as per protocol)."
   },
   {
     "objectID": "logbook/posts/2024_08_01/index.html#upload-code-and-update-license",
@@ -259,6 +273,27 @@
     "text": "15.44-15.50: Archive scope\nHaving received consensus on scope, I can now archive it.\n\nUpdated CITATION.cff version number and date\nAdd entry to CHANGELOG.md\nSet to sync on Zenodo (already activated by Tom)\nCreate GitHub release\nAdd DOI to README.md"
   },
   {
+    "objectID": "logbook/posts/2024_08_12/index.html#look-over-code-and-create-environment",
+    "href": "logbook/posts/2024_08_12/index.html#look-over-code-and-create-environment",
+    "title": "Day 2",
+    "section": "15.58-16.11: Look over code and create environment",
+    "text": "15.58-16.11: Look over code and create environment\nTheir README provides instructions to run the code - installing simpy, and then running python3 main.py -z ZONES.csv -p ICU_INPUT_PARAMS.csv -c DAILY_ARRIVALS.csv, noting that example input files are available in input/.\nA dockerfile is also provided. This installs Python 3.9 and the dependencies from requirements.txt (which just lists simpy, no version).\nCHARM_INFO.md is a data dictionary, explaining info provided to the model and the input parameter columns and so on.\nmain.py runs utils.args() and model.runSim().\nTo identify versions, I looked at the dates of the article and repository…\n\nConference 11-14 Dec 2022\nAdded to IEEE Explore 23 Jan 2023\nGitHub repository created and last updated on 17 Jan 2022\n\nLooking at Python and Simpy…\n\nhttps://peps.python.org/pep-0596/ - latest python 3.9 version possible would be 3.9.10 (14 Jan 2022)\nhttps://pypi.org/project/simpy/#history - latest simpy possible would be 4.0.1 (15 Apr 2020)\n\nI create a conda environment in reproduction/ (which has a benefit over the virtual environment of also including the python version). I then built this using mamba (mamba env create --name anagnostou2022 --file environment.yml)."
+  },
+  {
+    "objectID": "logbook/posts/2024_08_12/index.html#run-code",
+    "href": "logbook/posts/2024_08_12/index.html#run-code",
+    "title": "Day 2",
+    "section": "16.13-16.24: Run code",
+    "text": "16.13-16.24: Run code\nCopied relevant files to reproduction/ then, following their instruction, ran:\npython3 main.py -z input/ZONES.csv -p input/ICU_INPUT_PARAM\nS.csv -c input/DAILY_ARRIVALS.csv\nThis ran quickly and without issue, producing identical results as provided in OUT_STATS.csv. This is a pretty simple, small, logical file.\nI had a look through the code again to see if I could spot anything to create the plot, but didn’t find anything. I then had a look at the other directory they mention which creates the dashboard, https://gitlab.com/anabrunel/charm-app. This has:\n\nAdditional requirements - confirming simpy 4.0.1 was correct\nExtra file charm_app.py - but looking through the code, this produces scatter plots with create_traces() which look like they might be Figure 5A (but not in scope)\n\nAs I cannot spot any other plotting functions, I’m assuming that I will need to write these from scratch."
+  },
+  {
+    "objectID": "logbook/posts/2024_08_12/index.html#write-plotting-function",
+    "href": "logbook/posts/2024_08_12/index.html#write-plotting-function",
+    "title": "Day 2",
+    "section": "16.29-17.00: Write plotting function",
+    "text": "16.29-17.00: Write plotting function\nCreated reproduction.ipynb, which required adding ipykernel and pandas and matplotlib to the environment.\nThe column names in the model output csv were easy to interpret, and so I could identify the appropriate columns needed for the plots.\nRan out of time to finish today."
+  },
+  {
     "objectID": "evaluation/reporting.html",
     "href": "evaluation/reporting.html",
     "title": "Reporting guidelines",
@@ -355,6 +390,27 @@
     "title": "Summary report",
     "section": "Evaluation against guidelines",
     "text": "Evaluation against guidelines\n\n\n                                                \n\n\nContext: The original study repository was evaluated against criteria from journal badges relating to how open and reproducible the model is and against guidance for sharing artefacts from the STARS framework. The original study article and supplementary materials (excluding code) were evaluated against reporting guidelines for DES models: STRESS-DES, and guidelines adapted from ISPOR-SDM."
+  },
+  {
+    "objectID": "reproduction/reproduction.html",
+    "href": "reproduction/reproduction.html",
+    "title": "Reproduction",
+    "section": "",
+    "text": "This notebook aims to reproduce Figure 3 from Anagnostou et al. 2022."
+  },
+  {
+    "objectID": "reproduction/reproduction.html#set-up",
+    "href": "reproduction/reproduction.html#set-up",
+    "title": "Reproduction",
+    "section": "Set-up",
+    "text": "Set-up\nImport required packages\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\nfrom dataclasses import dataclass\nimport os\nimport numpy as np\n\nSet file paths\n\n@dataclass(frozen=True)\nclass Paths:\n    '''Singleton object for storing paths to data and database.'''\n\n    outputs = './output'\n    model = 'OUT_STATS.csv'\n\n\npaths = Paths()\n\n\ndata = pd.read_csv(os.path.join(paths.outputs, paths.model))\ndata.head()\n\n\n\n\n\n\n\n\nday-mean\nday-s\nday-sd\nday-ci\nemArrivals-mean\nemArrivals-s\nemArrivals-sd\nemArrivals-ci\nelArrivals-mean\nelArrivals-s\n...\nzone7-available-sd\nzone7-available-ci\nzone8-type-mean\nzone8-type-s\nzone8-type-sd\nzone8-type-ci\nzone8-available-mean\nzone8-available-s\nzone8-available-sd\nzone8-available-ci\n\n\n\n\n0\n0.0\n0.0\n0.0\n0.0\n10.8\n48.8\n3.492850\n3.061618\n3.8\n30.8\n...\n0.000000\n0.000000\n6.0\n0.0\n0.0\n0.0\n15.0\n0.0\n0.000000\n0.000\n\n\n1\n1.0\n0.0\n0.0\n0.0\n6.6\n29.2\n2.701851\n2.368277\n6.0\n6.0\n...\n0.000000\n0.000000\n6.0\n0.0\n0.0\n0.0\n15.0\n0.0\n0.000000\n0.000\n\n\n2\n2.0\n0.0\n0.0\n0.0\n8.8\n82.8\n4.549725\n3.988010\n5.8\n6.8\n...\n2.792848\n2.448039\n6.0\n0.0\n0.0\n0.0\n14.0\n0.0\n0.000000\n0.000\n\n\n3\n3.0\n0.0\n0.0\n0.0\n5.4\n83.2\n4.560702\n3.997631\n4.0\n26.0\n...\n1.673320\n1.466730\n6.0\n0.0\n0.0\n0.0\n15.0\n0.0\n0.000000\n0.000\n\n\n4\n4.0\n0.0\n0.0\n0.0\n4.6\n57.2\n3.781534\n3.314661\n4.2\n14.8\n...\n1.095445\n0.960200\n6.0\n0.0\n0.0\n0.0\n14.2\n0.8\n0.447214\n0.392\n\n\n\n\n5 rows × 144 columns"
+  },
+  {
+    "objectID": "reproduction/reproduction.html#create-plot",
+    "href": "reproduction/reproduction.html#create-plot",
+    "title": "Reproduction",
+    "section": "Create plot",
+    "text": "Create plot\n\ndef add_ci(x, y, error, ax, color, alpha):\n    '''\n    Add shaded confidence interval to a subplot\n\n    Parameters:\n    -----------\n    x : column\n        Column being plot on x axis\n    y : column\n        Column with mean values being plot on y axis\n    error : column\n        Column containing confidence interval for mean on each day\n    ax : matplotlib axis object\n        Axis to add confidence interval to\n    color : string\n        Color of shaded confidence interval\n    alpha : number between 0 and 1\n        Transparency of shaded confidence interval\n    '''\n    ax.fill_between(x, y-error, y+error, color=color, alpha=alpha)\n\n\n# Set up number of subplots and figure size\nfig, ax = plt.subplots(3, 2, figsize=(15, 8))\n\n# Mean lines\nax[0,0].plot(data['el-capacity-mean'], color='black', marker='.')\nax[0,0].plot(data['el-available-mean'], color='green', marker='.')\nax[1,0].plot(data['el-capacity-mean'], color='black')\nax[2,0].plot(data['el-available-mean'], color='green')\nax[0,1].plot(data['c-capacity-mean'], color='black', marker='.')\nax[0,1].plot(data['c-available-mean'], color='green', marker='.')\nax[1,1].plot(data['c-capacity-mean'], color='black')\nax[2,1].plot(data['c-available-mean'], color='green')\n\n# Experimenting with adding confidence interval\nadd_ci(data['day-mean'], data['el-capacity-mean'], data['el-capacity-ci'],\n       ax=ax[1,0], color='black', alpha=0.2)\n\n# Set tick frequency and axis limits for subplots\nplt.setp(ax, xticks=np.arange(0,24), ylim=(0,12), yticks=np.arange(0,14,2))\nax[1,1].set_ylim(0,14)\nax[1,1].set_yticks(np.arange(0, 16, 2))\nax[2,1].set_ylim(0,14)\nax[2,1].set_yticks(np.arange(0, 16, 2))\n\nplt.show()"
   },
   {
     "objectID": "original_study/charm/CHARM_INFO.html",

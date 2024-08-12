@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Logbook – Reproducing Anagnostou et al.&nbsp;2022</title>
+<title>charm_info – Reproducing Anagnostou et al. 2022</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../quarto_site/stars_logo_blue.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -69,72 +67,14 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -194,7 +134,7 @@ window.Quarto = {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="../logbook/logbook.html" aria-current="page"> 
+    <a class="nav-link" href="../logbook/logbook.html"> 
 <span class="menu-text">Logbook</span></a>
   </li>  
   <li class="nav-item">
@@ -220,119 +160,132 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Logbook</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page-left">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="read">read <span class="quarto-category-count">(1)</span></div><div class="category" data-category="reproduction">reproduction <span class="quarto-category-count">(1)</span></div><div class="category" data-category="scope">scope <span class="quarto-category-count">(1)</span></div><div class="category" data-category="setup">setup <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#charm-info" id="toc-charm-info" class="nav-link active" data-scroll-target="#charm-info">CHARM Info</a>
+  <ul class="collapse">
+  <li><a href="#input-parameters" id="toc-input-parameters" class="nav-link" data-scroll-target="#input-parameters">Input Parameters</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022/edit/main/reproduction/CHARM_INFO.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 
 
 
+<section id="charm-info" class="level1">
+<h1>CHARM Info</h1>
+<p><strong>Time unit:</strong> Day</p>
+<p><strong>Admissions:</strong> three types of admissions</p>
+<p><strong>Emergency:</strong> triangular distribution</p>
+<p><strong>Elective:</strong> triangular distribution</p>
+<p><strong>Covid-19 positive:</strong> CSV file</p>
+<p><strong>Zones:</strong> Zones can be any of:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Zone type</th>
+<th>Short</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Emergency ICU</td>
+<td>EM</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Emergency Recovery</td>
+<td>EMR</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>Elective ICU</td>
+<td>EL</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>Elective Recovery</td>
+<td>ELR</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>Covid-19 ICU</td>
+<td>C</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>Covid-19 Recovery</td>
+<td>CR</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+<p>Each zone can be defined as COVID, EMERGENCY, ELECTIVE and respective RECOVERY</p>
+<p>IF COVID occupancy &gt; UPPER_THRESHOLD, EMERGENCY/ELECTIVE BECOMES COVID</p>
+<p>IF COVID occupancy &lt; LOWER_THRESHOLD, reverse EMERGENCY/ELECTIVE</p>
+<p><strong>Run length:</strong> As many days as the entries in DAILY_ARRIVALS.csv</p>
+<section id="input-parameters" class="level2">
+<h2 class="anchored" data-anchor-id="input-parameters">Input Parameters</h2>
+<section id="file-icu_input_params.csv" class="level4">
+<h4 class="anchored" data-anchor-id="file-icu_input_params.csv">file: ICU_INPUT_PARAMS.csv</h4>
+<p><strong>Replications:</strong> <em>Number of simulation replications {integer}</em></p>
+<p><strong>Arrivals</strong></p>
+<ul>
+<li><p>Emergency daily arrivals: <em>Three fields {min, max, mode}</em></p></li>
+<li><p>Elective daily arrivals: <em>Three fields {min, max, mode}</em></p></li>
+</ul>
+<p><strong>Length of Stay (in days):</strong></p>
+<ul>
+<li><p>Emergency ICU LoS: <em>Three fields {min, max, mode}</em></p></li>
+<li><p>Elective ICU LoS: <em>Three fields {min, max, mode}</em></p></li>
+<li><p>Covid-19 ICU Los: <em>Three fields {min, max, mode}</em></p></li>
+<li><p>Emergency recovery LoS: <em>Three fields {min, max, mode}</em></p></li>
+<li><p>Elective recovery LoS: <em>Three fields {min, max, mode}</em></p></li>
+<li><p>Covid-19 recovery Los : <em>Three fields {min, max, mode}</em></p></li>
+</ul>
+<p><strong>Mortality (probability)</strong></p>
+<ul>
+<li><p>Emergency ICU mortality: <em>One field {0-1}</em></p></li>
+<li><p>Elective ICU mortality: <em>One field {0-1}</em></p></li>
+<li><p>Covid-19 ICU mortality: <em>One field {0-1}</em></p></li>
+<li><p>Emergency recovery mortality: <em>One field {0-1}</em></p></li>
+<li><p>Elective recovery mortality: <em>One field {0-1}</em></p></li>
+<li><p>Covid-19 recovery mortality: <em>One field {0-1}</em></p></li>
+</ul>
+<p><strong>Covid ICU wards occupancy threshold (percentage)</strong></p>
+<ul>
+<li><p>Upper threshold: <em>One field {0-100}</em></p></li>
+<li><p>Lower threshold: <em>One field {0-100}</em></p></li>
+</ul>
+</section>
+<section id="file-zones.csv" class="level4">
+<h4 class="anchored" data-anchor-id="file-zones.csv">file: ZONES.csv</h4>
+<p><strong>ID:</strong> <em>Integer in ascending order starting from 1</em></p>
+<p><strong>Type:</strong> <em>Integer {1-6}</em></p>
+<p><strong>Capacity:</strong> <em>Integer {number of beds in the zone}</em></p>
+</section>
+<section id="file-daily_arrivals.csv" class="level4">
+<h4 class="anchored" data-anchor-id="file-daily_arrivals.csv">file: DAILY_ARRIVALS.csv</h4>
+<p><strong>Index:</strong> <em>Integer in ascending order starting from 0</em></p>
+<p><strong>Day:</strong> <em>Can be any e.g., Integer or Date</em></p>
+<p><strong>Covid-19 positive:</strong> <em>Integer {number of Covid-19 positive patients}</em></p>
 
-<p>These diary entries record daily progress in reproduction of the study, providing a transparent and detailed record of work.</p>
 
+</section>
+</section>
+</section>
 
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="reproduction" data-listing-date-sort="1723420800000" data-listing-file-modified-sort="1723478543731" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="393">
-<div class="thumbnail">
-<p><a href="../logbook/posts/2024_08_12/index.html" class="no-external"></a></p><a href="../logbook/posts/2024_08_12/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="../logbook/posts/2024_08_12/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../logbook/posts/2024_08_12/index.html" class="no-external">Day 2</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../logbook/posts/2024_08_12/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('reproduction'); return false;">
-reproduction
-</div>
-</div>
-<div class="listing-description">
-<a href="../logbook/posts/2024_08_12/index.html" class="no-external">TBC. Total time used: TBCh TBCm (TBC%)</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../logbook/posts/2024_08_12/index.html" class="no-external">
-<div class="listing-date">
-Aug 12, 2024
-</div>
-<div class="listing-author">
-Amy Heather
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="setup,read,scope" data-listing-date-sort="1722470400000" data-listing-file-modified-sort="1723478543731" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="553">
-<div class="thumbnail">
-<p><a href="../logbook/posts/2024_08_01/index.html" class="no-external"></a></p><a href="../logbook/posts/2024_08_01/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="../logbook/posts/2024_08_01/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../logbook/posts/2024_08_01/index.html" class="no-external">Day 1</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../logbook/posts/2024_08_01/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('setup'); return false;">
-setup
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('read'); return false;">
-read
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('scope'); return false;">
-scope
-</div>
-</div>
-<div class="listing-description">
-<a href="../logbook/posts/2024_08_01/index.html" class="no-external">Set-up repository, read article and defined scope. Total time used: 0h 45m (1.9%)</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../logbook/posts/2024_08_01/index.html" class="no-external">
-<div class="listing-date">
-Aug 1, 2024
-</div>
-<div class="listing-author">
-Amy Heather
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -777,7 +730,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022/edit/main/logbook/logbook.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022/edit/main/reproduction/CHARM_INFO.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">

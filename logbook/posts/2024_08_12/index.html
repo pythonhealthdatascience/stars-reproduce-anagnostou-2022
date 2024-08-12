@@ -202,6 +202,9 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#archive-scope" id="toc-archive-scope" class="nav-link active" data-scroll-target="#archive-scope">15.44-15.50: Archive scope</a></li>
+  <li><a href="#look-over-code-and-create-environment" id="toc-look-over-code-and-create-environment" class="nav-link" data-scroll-target="#look-over-code-and-create-environment">15.58-16.11: Look over code and create environment</a></li>
+  <li><a href="#run-code" id="toc-run-code" class="nav-link" data-scroll-target="#run-code">16.13-16.24: Run code</a></li>
+  <li><a href="#write-plotting-function" id="toc-write-plotting-function" class="nav-link" data-scroll-target="#write-plotting-function">16.29-17.00: Write plotting function</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022/edit/main/logbook/posts/2024_08_12/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -235,6 +238,44 @@ Note
 <li>Create GitHub release</li>
 <li>Add DOI to <code>README.md</code></li>
 </ul>
+</section>
+<section id="look-over-code-and-create-environment" class="level2">
+<h2 class="anchored" data-anchor-id="look-over-code-and-create-environment">15.58-16.11: Look over code and create environment</h2>
+<p>Their README provides instructions to run the code - installing simpy, and then running <code>python3 main.py -z ZONES.csv -p ICU_INPUT_PARAMS.csv -c DAILY_ARRIVALS.csv</code>, noting that example input files are available in <code>input/</code>.</p>
+<p>A dockerfile is also provided. This installs Python 3.9 and the dependencies from <code>requirements.txt</code> (which just lists <code>simpy</code>, no version).</p>
+<p><code>CHARM_INFO.md</code> is a data dictionary, explaining info provided to the model and the input parameter columns and so on.</p>
+<p><code>main.py</code> runs <code>utils.args()</code> and <code>model.runSim()</code>.</p>
+<p>To identify versions, I looked at the dates of the article and repository…</p>
+<ul>
+<li>Conference 11-14 Dec 2022</li>
+<li>Added to IEEE Explore 23 Jan 2023</li>
+<li>GitHub repository created and last updated on 17 Jan 2022</li>
+</ul>
+<p>Looking at Python and Simpy…</p>
+<ul>
+<li>https://peps.python.org/pep-0596/ - latest python 3.9 version possible would be 3.9.10 (14 Jan 2022)</li>
+<li>https://pypi.org/project/simpy/#history - latest simpy possible would be 4.0.1 (15 Apr 2020)</li>
+</ul>
+<p>I create a conda environment in <code>reproduction/</code> (which has a benefit over the virtual environment of also including the python version). I then built this using mamba (<code>mamba env create --name anagnostou2022 --file environment.yml</code>).</p>
+</section>
+<section id="run-code" class="level2">
+<h2 class="anchored" data-anchor-id="run-code">16.13-16.24: Run code</h2>
+<p>Copied relevant files to <code>reproduction/</code> then, following their instruction, ran:</p>
+<pre><code>python3 main.py -z input/ZONES.csv -p input/ICU_INPUT_PARAM
+S.csv -c input/DAILY_ARRIVALS.csv</code></pre>
+<p>This ran quickly and without issue, producing identical results as provided in <code>OUT_STATS.csv</code>. This is a pretty simple, small, logical file.</p>
+<p>I had a look through the code again to see if I could spot anything to create the plot, but didn’t find anything. I then had a look at the other directory they mention which creates the dashboard, <code>https://gitlab.com/anabrunel/charm-app</code>. This has:</p>
+<ul>
+<li>Additional requirements - confirming simpy 4.0.1 was correct</li>
+<li>Extra file <code>charm_app.py</code> - but looking through the code, this produces scatter plots with <code>create_traces()</code> which look like they might be Figure 5A (but not in scope)</li>
+</ul>
+<p>As I cannot spot any other plotting functions, I’m assuming that I will need to write these from scratch.</p>
+</section>
+<section id="write-plotting-function" class="level2">
+<h2 class="anchored" data-anchor-id="write-plotting-function">16.29-17.00: Write plotting function</h2>
+<p>Created <code>reproduction.ipynb</code>, which required adding <code>ipykernel</code> and <code>pandas</code> and <code>matplotlib</code> to the environment.</p>
+<p>The column names in the model output csv were easy to interpret, and so I could identify the appropriate columns needed for the plots.</p>
+<p>Ran out of time to finish today.</p>
 
 
 </section>
