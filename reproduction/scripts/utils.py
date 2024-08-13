@@ -123,16 +123,18 @@ def outHeadersList():
         s.outDict['zone%s-available-ci' %z] = []
 
 def readZones():
-    #with open('ZONES.csv') as csvfile:
-    with open('./input/%s' %zonesFile) as csvfile:
+    # with open('ZONES.csv') as csvfile:
+    # with open('./input/%s' %zonesFile) as csvfile:
+    with open(zonesFile) as csvfile:
         reader = csv.reader(csvfile)
         next(reader, None) # skip header
         for row in reader:
             zList.append(row)
     
 def readInputParams():
-    #with open('ICU_INPUT_PARAMS.csv') as csvfile:
-    with open('./input/%s' %paramsFile) as csvfile:
+    # with open('ICU_INPUT_PARAMS.csv') as csvfile:
+    # with open('./input/%s' %paramsFile) as csvfile:
+    with open(paramsFile) as csvfile:
         reader = csv.reader(csvfile)
         next(reader, None)  # skip the header
         for row in reader:
@@ -188,8 +190,9 @@ def readInputParams():
             replications = int(row[32])
 
 def readCArrivals():
-    #with open('DAILY_ARRIVALS.csv') as csvfile:
-    with open('./input/%s' %cArrivalsFile) as csvfile:
+    # with open('DAILY_ARRIVALS.csv') as csvfile:
+    # with open('./input/%s' %cArrivalsFile) as csvfile:
+    with open(cArrivalsFile) as csvfile:
         reader = csv.reader(csvfile)
         for row in reader:
             cArrivals.append(int(row[2]))
@@ -207,7 +210,7 @@ def writeOut(rep, ls):
         writer.writerow(ls)
 
 def writeStatsHeader():
-    with open('./output/OUT_STATS.csv', 'w+') as csvfile:
+    with open('../output/OUT_STATS.csv', 'w+') as csvfile:
         writer = csv.writer(csvfile, lineterminator='\r')
         writer.writerow(s.outDict)
 
@@ -217,7 +220,7 @@ def writeStatsOut(idx):
     row_values_list = []
     for i in range(len(values_list)):
         row_values_list.append(values_list[i][idx])
-    with open('./output/OUT_STATS.csv', 'a+') as csvfile:
+    with open('../output/OUT_STATS.csv', 'a+') as csvfile:
         writer = csv.writer(csvfile, lineterminator='\r')
         writer.writerow(row_values_list)
 
@@ -229,7 +232,7 @@ def clearOut(rep):
            writer. writerow()   
            
 def clearStatsOut():
-    with open('./output/OUT_STATS.csv', 'w+') as csvfile:
+    with open('../output/OUT_STATS.csv', 'w+') as csvfile:
         reader = csv.reader(csvfile)
         writer = csv.writer(csvfile, lineterminator='\r')
         for row in reader:
