@@ -7,7 +7,9 @@ bibliography: references.bib
 
 ## Code and data
 
-View the CHARM model at: <https://gitlab.com/anabrunel/charm>
+View the CHARM model on GitLab at: <https://gitlab.com/anabrunel/charm>
+
+It is archived on Figshare: <https://doi.org/10.17633/rd.brunel.18517892.v1>
 
 In relation to the CHARM model, the article also includes links to their app code (<https://gitlab.com/anabrunel/charm-app>) and hosted app (<https://charm-des-app.herokuapp.com/>) (although no longer available as heroku not active).
 
