@@ -8,6 +8,7 @@ Created on Tue Aug 10 07:27:08 2021
 import csv
 import getopt
 import sys
+from pathlib import Path
 
 import stats as s
 
@@ -49,11 +50,13 @@ OPTIONS arguments
 zonesFile = ""
 paramsFile = ""
 cArrivalsFile = ""
+outputFile = ""
+
 
 def args():
     argv = sys.argv[1:]
     try:
-       options, args = getopt.getopt(argv, "z:p:c:", ["zonesFile =", "paramsFile=", "cArrivalsFile="])
+       options, args = getopt.getopt(argv, "z:p:c:o:", ["zonesFile =", "paramsFile=", "cArrivalsFile=", "outputFile="])
     except:
        print("error")
        print('[Required arguments: -z ZONES.csv -p ICU_INPUT_PARAMS.csv -c DAILY_ARRIVALS.csv i.e. <zones filename> <input params filename> <daily covid arrivales filenema>]')
@@ -73,6 +76,10 @@ def args():
           elif name in ['-c', '--cArrivalsFile']:
              global cArrivalsFile
              cArrivalsFile = value
+          elif name in ['-o', '--outputFile']:
+             global outputFile
+             outputFile = value
+            
 
 """
 FILE UTILS
@@ -210,7 +217,8 @@ def writeOut(rep, ls):
         writer.writerow(ls)
 
 def writeStatsHeader():
-    with open('../output/OUT_STATS.csv', 'w+') as csvfile:
+    #with open('../output/OUT_STATS.csv', 'w+') as csvfile:
+    with open(outputFile, 'w+') as csvfile:
         writer = csv.writer(csvfile, lineterminator='\r')
         writer.writerow(s.outDict)
 
@@ -220,7 +228,8 @@ def writeStatsOut(idx):
     row_values_list = []
     for i in range(len(values_list)):
         row_values_list.append(values_list[i][idx])
-    with open('../output/OUT_STATS.csv', 'a+') as csvfile:
+    #with open('../output/OUT_STATS.csv', 'a+') as csvfile:
+    with open(outputFile, 'a+') as csvfile:
         writer = csv.writer(csvfile, lineterminator='\r')
         writer.writerow(row_values_list)
 
@@ -232,9 +241,10 @@ def clearOut(rep):
            writer. writerow()   
            
 def clearStatsOut():
-    with open('../output/OUT_STATS.csv', 'w+') as csvfile:
-        reader = csv.reader(csvfile)
-        writer = csv.writer(csvfile, lineterminator='\r')
-        for row in reader:
-           writer. writerow()   
-
+    #with open('../output/OUT_STATS.csv', 'w+') as csvfile:
+    if Path(outputFile).is_file():
+        with open(outputFile, 'w+') as csvfile:
+            reader = csv.reader(csvfile)
+            writer = csv.writer(csvfile, lineterminator='\r')
+            for row in reader:
+                writer.writerow()
