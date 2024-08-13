@@ -226,6 +226,8 @@ div.csl-indent {
       <h1 class="title">Day 3</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">reproduction</div>
+                <div class="quarto-category">report</div>
+                <div class="quarto-category">compendium</div>
               </div>
                   </div>
   </div>
@@ -269,6 +271,7 @@ div.csl-indent {
   <li><a href="#timings-for-evaluation" id="toc-timings-for-evaluation" class="nav-link" data-scroll-target="#timings-for-evaluation">Timings for evaluation</a></li>
   <li><a href="#untimed-reflections" id="toc-untimed-reflections" class="nav-link" data-scroll-target="#untimed-reflections">Untimed: Reflections</a></li>
   <li><a href="#untimed-summary-report" id="toc-untimed-summary-report" class="nav-link" data-scroll-target="#untimed-summary-report">Untimed: Summary report</a></li>
+  <li><a href="#untimed-research-compendium" id="toc-untimed-research-compendium" class="nav-link" data-scroll-target="#untimed-research-compendium">Untimed: Research compendium</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022/edit/main/logbook/posts/2024_08_13/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -289,7 +292,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Finished reproduction of the single figure. Total time used: 2h 10m (5.4%). Evaluated against criteria and guidelines. Evaluation time: 1h 12m.</p>
+<p>Finished reproduction of the single figure. Total time used: 2h 10m (5.4%). Evaluated against criteria and guidelines. Evaluation time: 1h 12m. Then completed summary report, reflections, and research compendium stage.</p>
 </div>
 </div>
 <section id="resuming-recreation-of-figure" class="level2">
@@ -303,7 +306,7 @@ Note
 </section>
 <section id="timings-for-reproduction" class="level2">
 <h2 class="anchored" data-anchor-id="timings-for-reproduction">Timings for reproduction</h2>
-<div id="4fdc9680" class="cell" data-execution_count="1">
+<div id="12c81b4c" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>sys.path.append(<span class="st">'../'</span>)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> timings <span class="im">import</span> calculate_times</span>
@@ -350,7 +353,7 @@ Used 5.4% of 40 hours max</code></pre>
 </section>
 <section id="timings-for-evaluation" class="level2">
 <h2 class="anchored" data-anchor-id="timings-for-evaluation">Timings for evaluation</h2>
-<div id="ebcea995" class="cell" data-execution_count="2">
+<div id="bac60ad8" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>sys.path.append(<span class="st">'../'</span>)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> timings <span class="im">import</span> calculate_times</span>
@@ -379,6 +382,31 @@ Total used to date: 72m, or 1h 12m</code></pre>
 <section id="untimed-summary-report" class="level2">
 <h2 class="anchored" data-anchor-id="untimed-summary-report">Untimed: Summary report</h2>
 <p>Completed summary report using template.</p>
+</section>
+<section id="untimed-research-compendium" class="level2">
+<h2 class="anchored" data-anchor-id="untimed-research-compendium">Untimed: Research compendium</h2>
+<p><strong>Seperate folders for data, methods and outputs</strong>: Moved scripts into a <code>script</code> folder. Had to modify <code>utils.py</code> as:</p>
+<ul>
+<li>That automatically adds <code>./input</code> to your input file paths, but we need <code>../input</code>.</li>
+<li>Path to output file is different now too</li>
+</ul>
+<p><strong>Tests</strong>:</p>
+<ul>
+<li>Add <code>pytest</code> to environment</li>
+<li>Modify <code>utils.py</code> as it assumes you always want to save the results as a csv file in <code>../output/OUT_STATS.csv</code>. Tried to amend this following the structure they had already set up for the input file paths. <strong>Note:</strong> It was quite tricky to do this - this was pretty hard coded into the script.</li>
+</ul>
+<p><strong>Run time</strong>: Add note that run time is only a couple of seconds to the notebook and README</p>
+<p><strong>Dockerfile</strong>: Created Dockerfile as I did for <a href="https://github.com/pythonhealthdatascience/stars-reproduce-shoaib-2022/blob/main/reproduction/docker/">Shoaib et al.&nbsp;2022</a>.</p>
+<ul>
+<li>Add <code>conda-forge</code> channel, plus <code>jupyterlab</code> and <code>notebook</code> packages, to environment</li>
+<li>Built image, created container, opened JupyterLab, and ran both the notebook and test successfully.</li>
+</ul>
+<p><strong>GitHub container repository</strong>:</p>
+<ul>
+<li>Activated GitHub action</li>
+<li>Pulled container and tested running notebook and test successfully</li>
+</ul>
+<p><strong>README</strong>: Completed the README.</p>
 
 
 

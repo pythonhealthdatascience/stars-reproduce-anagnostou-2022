@@ -214,48 +214,116 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="reproduction-readme" class="level1">
 <h1>Reproduction README</h1>
-<!-- TODO: Remove this warning once filled out README -->
-<p><strong>Please note: This is a template README and has not yet been completed</strong></p>
-<!-- TODO: Fill out the README -->
 <section id="model-summary" class="level2">
 <h2 class="anchored" data-anchor-id="model-summary">Model summary</h2>
-<p>TBC</p>
+<blockquote class="blockquote">
+<p>Anagnostou, A. Groen, D. Taylor, S. Suleimenova, D. Abubakar, N. Saha, A. Mintram, K. Ghorbani, M. Daroge, H. Islam, T. Xue, Y. Okine, E. Anokye, N. <strong>FACS-CHARM: A Hybrid Agent-Based and Discrete-Event Simulation Approach for Covid-19 Management at Regional Level</strong>. 2022 Winter Simulation Conference (WSC), Singapore, pp.&nbsp;1223-1234. (2022). <a href="https://doi.org/10.1109/WSC57314.2022.10015462" class="uri">https://doi.org/10.1109/WSC57314.2022.10015462</a>.</p>
+</blockquote>
+<p>This paper includes two models - we have focussed just on the dynamiC Hospital wARd Management (CHARM) model. CHARM is a discrete-event simulation modelling intensive care units (ICU) in the COVID-19 pandemic (as well as subsequent stays in a recovery bed). It includes three types of admission to the ICU (emergency, elective or COVID-19). COVID-19 patients are kept seperate, and if they run out of capacity due to a surge in COVID-19 admissions, additional capacity can be pooled from the elective and emergency capacity.</p>
 </section>
 <section id="scope-of-the-reproduction" class="level2">
 <h2 class="anchored" data-anchor-id="scope-of-the-reproduction">Scope of the reproduction</h2>
-<p>TBC</p>
+<p>In this assessment, we attempted to reproduce 1 item: a figure.</p>
 </section>
 <section id="reproducing-these-results" class="level2">
 <h2 class="anchored" data-anchor-id="reproducing-these-results">Reproducing these results</h2>
 <section id="repository-overview" class="level3">
 <h3 class="anchored" data-anchor-id="repository-overview">Repository overview</h3>
-<p>TBC</p>
+<pre class="{bash}"><code>├── docker
+│   └──  ...
+├── input
+│   └──  ...
+├── output
+│   └──  ...
+├── scripts
+│   └──  ...
+├── tests
+│   └──  ...
+├── environment.yml
+└── README.md</code></pre>
+<ul>
+<li><code>docker/</code> - Instructions for creation of Docker container.</li>
+<li><code>input/</code> - Input files for the model</li>
+<li><code>output/</code> - Output files from the model and reproduction.</li>
+<li><code>scripts/</code> - Code for the model and for reproducing the figure in the scope.</li>
+<li><code>tests/</code> - Test to check that model produces consistent results with our reproduction.</li>
+<li><code>environment.yml</code> - Instructions for creation of python environment.</li>
+<li><code>README.md</code> - This file!</li>
+</ul>
 </section>
 <section id="step-1.-set-up-environment" class="level3">
 <h3 class="anchored" data-anchor-id="step-1.-set-up-environment">Step 1. Set up environment</h3>
-<p>TBC</p>
+<section id="option-a-condamamba-environment" class="level4">
+<h4 class="anchored" data-anchor-id="option-a-condamamba-environment">Option A: Conda/mamba environment</h4>
+<p>A <code>conda</code>/<code>mamba</code> environment has been provided. To create this environment on your machine, you should run this command in your terminal:</p>
+<pre><code>conda env create -f environment.yaml</code></pre>
+<p>You can then use this environment in your preferred IDE, such as VSCode (where you will be asked to select the kernel/interpreter). You can activate it in the terminal by running:</p>
+<pre><code>conda activate anagnostou2022</code></pre>
+<p>You can run either of these commands also using <code>mamba</code> instead (e.g.&nbsp;<code>mamba activate anagnostou2022</code>).</p>
+</section>
+<section id="option-b-build-local-docker-image" class="level4">
+<h4 class="anchored" data-anchor-id="option-b-build-local-docker-image">Option B: Build local docker image</h4>
+<p>A <code>Dockerfile</code> is provided, which you can use to build the Docker image. The docker image will include the correct version of Python and the packages, and an installation of jupyterlab which you can run from your browser. It will also include the scripts and outputs from this directory.</p>
+<p>For this option (and option C), you’ll need to ensure that <code>docker</code> is installed on your machine.</p>
+<p>To create the docker image and then open jupyter lab:</p>
+<ol type="1">
+<li>In the terminal, navigate to parent directory of the <code>reproduction/</code> folder</li>
+<li>Build the image:</li>
+</ol>
+<pre><code>sudo docker build --tag anagnostou2022 . -f ./reproduction/docker/Dockerfile</code></pre>
+<ol start="3" type="1">
+<li>Create a docker container from that image and open jupyter lab:</li>
+</ol>
+<pre><code>(sleep 2 &amp;&amp; xdg-open http://localhost:8080) &amp; sudo docker run -it -p 8080:80 --name anagnostou2022_docker anagnostou2022</code></pre>
+</section>
+<section id="option-c-pull-pre-built-docker-image" class="level4">
+<h4 class="anchored" data-anchor-id="option-c-pull-pre-built-docker-image">Option C: Pull pre-built docker image</h4>
+<p>A pre-built image is available on the GitHub container registry. To use it:</p>
+<ol type="1">
+<li>Create a Personal Access Token (Classic) for your GitHub account with <code>write:packages</code> and <code>delete:packages</code> access</li>
+<li>On terminal, run the following command and enter your sudo password (if prompted), followed by the token just generated (which acts as your GitHub password)</li>
+</ol>
+<pre><code>sudo docker login ghcr.io -u githubusername</code></pre>
+<ol start="3" type="1">
+<li>Download the image:</li>
+</ol>
+<pre><code>sudo docker pull ghcr.io/pythonhealthdatascience/anagnostou2022</code></pre>
+<ol start="4" type="1">
+<li>Create container and open Jupyter Lab:</li>
+</ol>
+<pre><code>(sleep 2 &amp;&amp; xdg-open http://localhost:8080) &amp; sudo docker run -it -p 8080:80 --name anagnostou2022_docker ghcr.io/pythonhealthdatascience/anagnostou2022:latest</code></pre>
+</section>
 </section>
 <section id="step-2.-running-the-model" class="level3">
 <h3 class="anchored" data-anchor-id="step-2.-running-the-model">Step 2. Running the model</h3>
-<p>TBC</p>
+<section id="option-a-from-the-command-line" class="level4">
+<h4 class="anchored" data-anchor-id="option-a-from-the-command-line">Option A: From the command line</h4>
+<p>You can run the model from the command line (although this will not produce the figure). Assuming you are in the <code>reproduction/</code> folder, run the command:</p>
+<pre><code>python3 main.py -z input/ZONES.csv -p input/ICU_INPUT_PARAMS.csv -c input/DAILY_ARRIVALS.csv -o output/OUT_STATS.csv </code></pre>
+</section>
+<section id="option-b-execute-the-notebook" class="level4">
+<h4 class="anchored" data-anchor-id="option-b-execute-the-notebook">Option B: Execute the notebook</h4>
+<p>You can execute the <code>reproduction.ipynb</code> file to run the model. This will also produce the <strong>figure</strong> from the article.</p>
+</section>
+<section id="option-c-pytest" class="level4">
+<h4 class="anchored" data-anchor-id="option-c-pytest">Option C: Pytest</h4>
+<p>The model has been set up as a test, so you can check whether your output matches the expected output, when run with the provided input parameters. You can run this from the terminal. Ensure that the <code>anagnostou2022</code> environment is active and that you are in the <code>reproduction/</code> folder. Then simply run:</p>
+<pre><code>pytest</code></pre>
+</section>
 </section>
 </section>
 <section id="reproduction-specs-and-runtime" class="level2">
 <h2 class="anchored" data-anchor-id="reproduction-specs-and-runtime">Reproduction specs and runtime</h2>
-<p>TBC</p>
+<p>This reproduction was conducted on an Intel Core i7-12700H with 32GB RAM running Ubuntu 22.04.4 Linux.</p>
 <p>The run time for <code>reproduction.ipynb</code> or the tests is only a couple of seconds.</p>
-<!-- Hint: On Linux, you can find specs by running the following commands in the terminal:
-cat /etc/os-release  # Shows operating system and version
-lscpu  # Shows computer model
-free -g  # Shows RAM in GB (combine total column) -->
 </section>
 <section id="citation" class="level2">
 <h2 class="anchored" data-anchor-id="citation">Citation</h2>
-<p>TBC</p>
+<p>To cite the original study, please refer to the reference above. To cite this reproduction, please refer to the CITATION.cff file in the parent folder.</p>
 </section>
 <section id="license" class="level2">
 <h2 class="anchored" data-anchor-id="license">License</h2>
-<p>TBC</p>
+<p>This repository is licensed under the BSD 3-Clause license.</p>
 
 
 </section>
