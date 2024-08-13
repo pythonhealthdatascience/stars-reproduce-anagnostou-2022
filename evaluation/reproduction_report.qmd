@@ -8,20 +8,17 @@ echo: False
 bibliography: ../quarto_site/references.bib
 ---
 
-<!-- TODO: Remove this warning once filled out report -->
-**Please note: This is a template page and has not yet been completed**
-
-<!-- TODO: Use this skeleton to create a summary report -->
-
 ## Study
 
-> [Authors]. **[Title]**. *[Journal]* [Volume], [Edition] ([Year]). <[URL]>.
+> Anagnostou, A. Groen, D. Taylor, S. Suleimenova, D. Abubakar, N. Saha, A. Mintram, K. Ghorbani, M. Daroge, H. Islam, T. Xue, Y. Okine, E. Anokye, N. **FACS-CHARM: A Hybrid Agent-Based and Discrete-Event Simulation Approach for Covid-19 Management at Regional Level**. 2022 Winter Simulation Conference (WSC), Singapore, pp. 1223-1234. (2022). <https://doi.org/10.1109/WSC57314.2022.10015462>.
 
-[Paragraph summarising model]
+This paper includes two models - we have focussed just on the dynamiC Hospital wARd Management (CHARM) model. CHARM is a discrete-event simulation modelling intensive care units (ICU) in the COVID-19 pandemic (as well as subsequent stays in a recovery bed). It includes three types of admission to the ICU (emergency, elective or COVID-19). COVID-19 patients are kept seperate, and if they run out of capacity due to a surge in COVID-19 admissions, additional capacity can be pooled from the elective and emergency capacity.
+
+**Note:** This reproduction just focuses on the "CHARM" model from this paper.
 
 ## Computational reproducibility
 
-Successfully reproduced **X out of X (X%)** of items from the scope in **Xh Xm (X%)**.
+Successfully reproduced **1 out of 1 (100%)** of items from the scope in **2h 10m (5.4%)**.
 
 Required troubleshooting:
 
@@ -29,22 +26,13 @@ Required troubleshooting:
 
 ::: {.panel-tabset}
 
-## Item X
+## Figure 3
 
-[One sentence description of item X]
+Cannot display original figure as do not have permissions for reuse, but can view at @anagnostou_facs-charm_2022
 
-[Display side-by-side]
-<!-- Example:
-![Original](../original_study/article_fig2.png){width=49% .lightbox}
-![Reproduction](../reproduction/output/patients_base_3_month.png){width=49% .lightbox} -->
+Reproduction:
 
-## Item Y
-
-[Set-up as for Item X]
-
-## Figure 4
-
-[Set-up as for Item X]
+![](../reproduction/output/fig3.png){.lightbox}
 
 :::
 
@@ -57,12 +45,12 @@ import plotly.express as px
 # Create dataframe of results
 col = ['fully', 'partially', 'not', 'na']
 eval_dict = {
-  'STARS (essential)': [1, 1, 1, 1],
-  'STARS (optional)': [1, 1, 1, 1],
-  'Badges (criteria)': [1, 1, 1, 1],
-  'Badges (badges)': [1, 1, 1, 1],
-  'STRESS-DES': [1, 1, 1, 1],
-  'ISPOR-SDM': [1, 1, 1, 1]
+  'STARS (essential)': [7, 0, 1, 0],
+  'STARS (optional)': [1, 1, 3, 0],
+  'Badges (criteria)': [10, 0, 2, 0],
+  'Badges (badges)': [5, 0, 7, 0],
+  'STRESS-DES': [14, 2, 5, 3],
+  'ISPOR-SDM': [8, 3, 4, 3]
 }
 eval_wide = pd.DataFrame(eval_dict, index=col).T
 eval = (eval_wide
