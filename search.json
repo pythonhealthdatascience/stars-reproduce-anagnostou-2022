@@ -175,39 +175,25 @@
     "text": "Timings\n\nimport sys\nsys.path.append('../')\nfrom timings import calculate_times\n\n# Minutes used prior to today\nused_to_date = 0\n\n# Times from today\ntimes = [\n    ('13.33', '13.46'),\n    ('14.07', '14.16'),\n    ('14.18', '14.24'),\n    ('14.26', '14.30'),\n    ('14.53', '15.06')]\n\ncalculate_times(used_to_date, times)\n\nTime spent today: 45m, or 0h 45m\nTotal used to date: 45m, or 0h 45m\nTime remaining: 2355m, or 39h 15m\nUsed 1.9% of 40 hours max"
   },
   {
-    "objectID": "logbook/logbook.html",
-    "href": "logbook/logbook.html",
-    "title": "Logbook",
+    "objectID": "logbook/posts/2024_08_13/index.html",
+    "href": "logbook/posts/2024_08_13/index.html",
+    "title": "Day 3",
     "section": "",
-    "text": "These diary entries record daily progress in reproduction of the study, providing a transparent and detailed record of work.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDay 2\n\n\n\n\n\n\nreproduction\n\n\n\n\n\n\n\n\n\nAug 12, 2024\n\n\nAmy Heather\n\n\n\n\n\n\n\n\n\n\n\n\nDay 1\n\n\n\n\n\n\nsetup\n\n\nread\n\n\nscope\n\n\n\n\n\n\n\n\n\nAug 1, 2024\n\n\nAmy Heather\n\n\n\n\n\n\nNo matching items"
+    "text": "Note\n\n\n\nFinished reproduction of the single figure. Total time used: 2h 10m (5.4%)"
   },
   {
-    "objectID": "quarto_site/study_publication.html",
-    "href": "quarto_site/study_publication.html",
-    "title": "Publication",
-    "section": "",
-    "text": "Anagnostou et al. (2022)"
+    "objectID": "logbook/posts/2024_08_13/index.html#resuming-recreation-of-figure",
+    "href": "logbook/posts/2024_08_13/index.html#resuming-recreation-of-figure",
+    "title": "Day 3",
+    "section": "09.14-09.38: Resuming recreation of figure",
+    "text": "09.14-09.38: Resuming recreation of figure\nContinuing from yesterday. I included the running of the model within reproduction.ipynb, and finished up the Figure so it matches the paper.\nFeel this is reproduced at 09.38."
   },
   {
-    "objectID": "quarto_site/study_publication.html#code-and-data",
-    "href": "quarto_site/study_publication.html#code-and-data",
-    "title": "Publication",
-    "section": "Code and data",
-    "text": "Code and data\nView the CHARM model at: https://gitlab.com/anabrunel/charm\nIn relation to the CHARM model, the article also includes links to their app code (https://gitlab.com/anabrunel/charm-app) and hosted app (https://charm-des-app.herokuapp.com/) (although no longer available as heroku not active)."
-  },
-  {
-    "objectID": "quarto_site/study_publication.html#journal-article",
-    "href": "quarto_site/study_publication.html#journal-article",
-    "title": "Publication",
-    "section": "Journal article",
-    "text": "Journal article\nThe article does not provide permissions to reshare, so cannot be uploaded.\nIf you wish to view this article, please navigate to any of:\n\nIEEE Xplore: https://doi.org/10.1109/WSC57314.2022.10015462\nBrunel University Research Archive: https://bura.brunel.ac.uk/handle/2438/25912 (open access for personal use)\nUCL Discovery: https://discovery.ucl.ac.uk/id/eprint/10187277/ (open access for personal use)\nACM Digital Library: https://dl.acm.org/doi/10.5555/3586210.3586312\n\nNo supplementary materials."
-  },
-  {
-    "objectID": "quarto_site/license.html",
-    "href": "quarto_site/license.html",
-    "title": "Open Source License",
-    "section": "",
-    "text": "This repository is licensed under the BSD 3-Clause License.\n\n\n\n\n\n\nView license\n\n\n\n\n\nBSD 3-Clause License\nCopyright (c) 2024, STARS Project Team, using code from 2022, Anastasia Anagnostou. All rights reserved.\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\nNeither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n\n\nThis is aligned with the original study, who shared their code under BSD 3-Clause License.\n\n\n\n\n\n\nView license\n\n\n\n\n\nBSD 3-Clause License\nCopyright (c) 2022, Anastasia Anagnostou All rights reserved.\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\nNeither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n\n\nThe original study was published in the journal “IEEE Xplore”. The copyright is retained by this journal. Open access versions are available with Brunel University Research Archive and UCL Discovery, but these are just for personal use, as in the statement below:\n\n\n\n\n\n\nView copyright statement\n\n\n\n\n\n“Copyright © 2022 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses, in any current or future media, including reprinting/republishing this material for advertising or promotional purposes, creating new collective works, for resale or redistribution to servers or lists, or reuse of any copyrighted component of this work in other works.”\nhttps://bura.brunel.ac.uk/handle/2438/25912"
+    "objectID": "logbook/posts/2024_08_13/index.html#timings-for-reproduction",
+    "href": "logbook/posts/2024_08_13/index.html#timings-for-reproduction",
+    "title": "Day 3",
+    "section": "Timings for reproduction",
+    "text": "Timings for reproduction\n\nimport sys\nsys.path.append('../')\nfrom timings import calculate_times\n\n# Minutes used prior to today\nused_to_date = 106\n\n# Times from today\ntimes = [\n    ('09.14', '09.38')]\n\ncalculate_times(used_to_date, times)\n\nTime spent today: 24m, or 0h 24m\nTotal used to date: 130m, or 2h 10m\nTime remaining: 2270m, or 37h 50m\nUsed 5.4% of 40 hours max"
   },
   {
     "objectID": "quarto_site/reproduction_readme.html",
@@ -259,11 +245,46 @@
     "text": "TBC"
   },
   {
+    "objectID": "quarto_site/license.html",
+    "href": "quarto_site/license.html",
+    "title": "Open Source License",
+    "section": "",
+    "text": "This repository is licensed under the BSD 3-Clause License.\n\n\n\n\n\n\nView license\n\n\n\n\n\nBSD 3-Clause License\nCopyright (c) 2024, STARS Project Team, using code from 2022, Anastasia Anagnostou. All rights reserved.\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\nNeither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n\n\nThis is aligned with the original study, who shared their code under BSD 3-Clause License.\n\n\n\n\n\n\nView license\n\n\n\n\n\nBSD 3-Clause License\nCopyright (c) 2022, Anastasia Anagnostou All rights reserved.\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\nNeither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n\n\nThe original study was published in the journal “IEEE Xplore”. The copyright is retained by this journal. Open access versions are available with Brunel University Research Archive and UCL Discovery, but these are just for personal use, as in the statement below:\n\n\n\n\n\n\nView copyright statement\n\n\n\n\n\n“Copyright © 2022 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses, in any current or future media, including reprinting/republishing this material for advertising or promotional purposes, creating new collective works, for resale or redistribution to servers or lists, or reuse of any copyrighted component of this work in other works.”\nhttps://bura.brunel.ac.uk/handle/2438/25912"
+  },
+  {
+    "objectID": "quarto_site/study_publication.html",
+    "href": "quarto_site/study_publication.html",
+    "title": "Publication",
+    "section": "",
+    "text": "Anagnostou et al. (2022)"
+  },
+  {
+    "objectID": "quarto_site/study_publication.html#code-and-data",
+    "href": "quarto_site/study_publication.html#code-and-data",
+    "title": "Publication",
+    "section": "Code and data",
+    "text": "Code and data\nView the CHARM model at: https://gitlab.com/anabrunel/charm\nIn relation to the CHARM model, the article also includes links to their app code (https://gitlab.com/anabrunel/charm-app) and hosted app (https://charm-des-app.herokuapp.com/) (although no longer available as heroku not active)."
+  },
+  {
+    "objectID": "quarto_site/study_publication.html#journal-article",
+    "href": "quarto_site/study_publication.html#journal-article",
+    "title": "Publication",
+    "section": "Journal article",
+    "text": "Journal article\nThe article does not provide permissions to reshare, so cannot be uploaded.\nIf you wish to view this article, please navigate to any of:\n\nIEEE Xplore: https://doi.org/10.1109/WSC57314.2022.10015462\nBrunel University Research Archive: https://bura.brunel.ac.uk/handle/2438/25912 (open access for personal use)\nUCL Discovery: https://discovery.ucl.ac.uk/id/eprint/10187277/ (open access for personal use)\nACM Digital Library: https://dl.acm.org/doi/10.5555/3586210.3586312\n\nNo supplementary materials."
+  },
+  {
+    "objectID": "logbook/logbook.html",
+    "href": "logbook/logbook.html",
+    "title": "Logbook",
+    "section": "",
+    "text": "These diary entries record daily progress in reproduction of the study, providing a transparent and detailed record of work.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDay 3\n\n\n\n\n\n\nreproduction\n\n\n\n\n\n\n\n\n\nAug 13, 2024\n\n\nAmy Heather\n\n\n\n\n\n\n\n\n\n\n\n\nDay 2\n\n\n\n\n\n\nreproduction\n\n\n\n\n\n\n\n\n\nAug 12, 2024\n\n\nAmy Heather\n\n\n\n\n\n\n\n\n\n\n\n\nDay 1\n\n\n\n\n\n\nsetup\n\n\nread\n\n\nscope\n\n\n\n\n\n\n\n\n\nAug 1, 2024\n\n\nAmy Heather\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "logbook/posts/2024_08_12/index.html",
     "href": "logbook/posts/2024_08_12/index.html",
     "title": "Day 2",
     "section": "",
-    "text": "Note\n\n\n\nTBC. Total time used: TBCh TBCm (TBC%)"
+    "text": "Note\n\n\n\nArchive scope, run code, start on figure. Total time used: 1h 46m (4.4%)"
   },
   {
     "objectID": "logbook/posts/2024_08_12/index.html#archive-scope",
@@ -284,7 +305,7 @@
     "href": "logbook/posts/2024_08_12/index.html#run-code",
     "title": "Day 2",
     "section": "16.13-16.24: Run code",
-    "text": "16.13-16.24: Run code\nCopied relevant files to reproduction/ then, following their instruction, ran:\npython3 main.py -z input/ZONES.csv -p input/ICU_INPUT_PARAM\nS.csv -c input/DAILY_ARRIVALS.csv\nThis ran quickly and without issue, producing identical results as provided in OUT_STATS.csv. This is a pretty simple, small, logical file.\nI had a look through the code again to see if I could spot anything to create the plot, but didn’t find anything. I then had a look at the other directory they mention which creates the dashboard, https://gitlab.com/anabrunel/charm-app. This has:\n\nAdditional requirements - confirming simpy 4.0.1 was correct\nExtra file charm_app.py - but looking through the code, this produces scatter plots with create_traces() which look like they might be Figure 5A (but not in scope)\n\nAs I cannot spot any other plotting functions, I’m assuming that I will need to write these from scratch."
+    "text": "16.13-16.24: Run code\nCopied relevant files to reproduction/ then, following their instruction, ran:\npython3 main.py -z ZONES.csv -p ICU_INPUT_PARAMS.csv -c DAILY_ARRIVALS.csv\nThis ran quickly and without issue, producing identical results as provided in OUT_STATS.csv. This is a pretty simple, small, logical file.\nI had a look through the code again to see if I could spot anything to create the plot, but didn’t find anything. I then had a look at the other directory they mention which creates the dashboard, https://gitlab.com/anabrunel/charm-app. This has:\n\nAdditional requirements - confirming simpy 4.0.1 was correct\nExtra file charm_app.py - but looking through the code, this produces scatter plots with create_traces() which look like they might be Figure 5A (but not in scope)\n\nAs I cannot spot any other plotting functions, I’m assuming that I will need to write these from scratch."
   },
   {
     "objectID": "logbook/posts/2024_08_12/index.html#write-plotting-function",
@@ -292,6 +313,13 @@
     "title": "Day 2",
     "section": "16.29-17.00: Write plotting function",
     "text": "16.29-17.00: Write plotting function\nCreated reproduction.ipynb, which required adding ipykernel and pandas and matplotlib to the environment.\nThe column names in the model output csv were easy to interpret, and so I could identify the appropriate columns needed for the plots.\nRan out of time to finish today."
+  },
+  {
+    "objectID": "logbook/posts/2024_08_12/index.html#timings",
+    "href": "logbook/posts/2024_08_12/index.html#timings",
+    "title": "Day 2",
+    "section": "Timings",
+    "text": "Timings\n\nimport sys\nsys.path.append('../')\nfrom timings import calculate_times\n\n# Minutes used prior to today\nused_to_date = 45\n\n# Times from today\ntimes = [\n    ('15.44', '15.50'),\n    ('15.58', '16.11'),\n    ('16.13', '16.24'),\n    ('16.29', '17.00')]\n\ncalculate_times(used_to_date, times)\n\nTime spent today: 61m, or 1h 1m\nTotal used to date: 106m, or 1h 46m\nTime remaining: 2294m, or 38h 14m\nUsed 4.4% of 40 hours max"
   },
   {
     "objectID": "evaluation/reporting.html",
@@ -403,14 +431,28 @@
     "href": "reproduction/reproduction.html#set-up",
     "title": "Reproduction",
     "section": "Set-up",
-    "text": "Set-up\nImport required packages\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\nfrom dataclasses import dataclass\nimport os\nimport numpy as np\n\nSet file paths\n\n@dataclass(frozen=True)\nclass Paths:\n    '''Singleton object for storing paths to data and database.'''\n\n    outputs = './output'\n    model = 'OUT_STATS.csv'\n\n\npaths = Paths()\n\n\ndata = pd.read_csv(os.path.join(paths.outputs, paths.model))\ndata.head()\n\n\n\n\n\n\n\n\nday-mean\nday-s\nday-sd\nday-ci\nemArrivals-mean\nemArrivals-s\nemArrivals-sd\nemArrivals-ci\nelArrivals-mean\nelArrivals-s\n...\nzone7-available-sd\nzone7-available-ci\nzone8-type-mean\nzone8-type-s\nzone8-type-sd\nzone8-type-ci\nzone8-available-mean\nzone8-available-s\nzone8-available-sd\nzone8-available-ci\n\n\n\n\n0\n0.0\n0.0\n0.0\n0.0\n10.8\n48.8\n3.492850\n3.061618\n3.8\n30.8\n...\n0.000000\n0.000000\n6.0\n0.0\n0.0\n0.0\n15.0\n0.0\n0.000000\n0.000\n\n\n1\n1.0\n0.0\n0.0\n0.0\n6.6\n29.2\n2.701851\n2.368277\n6.0\n6.0\n...\n0.000000\n0.000000\n6.0\n0.0\n0.0\n0.0\n15.0\n0.0\n0.000000\n0.000\n\n\n2\n2.0\n0.0\n0.0\n0.0\n8.8\n82.8\n4.549725\n3.988010\n5.8\n6.8\n...\n2.792848\n2.448039\n6.0\n0.0\n0.0\n0.0\n14.0\n0.0\n0.000000\n0.000\n\n\n3\n3.0\n0.0\n0.0\n0.0\n5.4\n83.2\n4.560702\n3.997631\n4.0\n26.0\n...\n1.673320\n1.466730\n6.0\n0.0\n0.0\n0.0\n15.0\n0.0\n0.000000\n0.000\n\n\n4\n4.0\n0.0\n0.0\n0.0\n4.6\n57.2\n3.781534\n3.314661\n4.2\n14.8\n...\n1.095445\n0.960200\n6.0\n0.0\n0.0\n0.0\n14.2\n0.8\n0.447214\n0.392\n\n\n\n\n5 rows × 144 columns"
+    "text": "Set-up\nImport required packages\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\nfrom dataclasses import dataclass\nimport os\nimport numpy as np\n\nSet file paths\n\n@dataclass(frozen=True)\nclass Paths:\n    '''Singleton object for storing paths to data and database.'''\n\n    outputs = './output'\n    model = 'OUT_STATS.csv'\n    figure = 'fig3.png'\n\n\npaths = Paths()"
+  },
+  {
+    "objectID": "reproduction/reproduction.html#run-model",
+    "href": "reproduction/reproduction.html#run-model",
+    "title": "Reproduction",
+    "section": "Run model",
+    "text": "Run model\n\n%run ./main.py -z ZONES.csv -p ICU_INPUT_PARAMS.csv -c DAILY_ARRIVALS.csv\n\nReplication  1 out of  5\nReplication  2 out of  5\nReplication  3 out of  5\nReplication  4 out of  5\nReplication  5 out of  5"
+  },
+  {
+    "objectID": "reproduction/reproduction.html#import-model-results",
+    "href": "reproduction/reproduction.html#import-model-results",
+    "title": "Reproduction",
+    "section": "Import model results",
+    "text": "Import model results\n\ndata = pd.read_csv(os.path.join(paths.outputs, paths.model))\ndata.head()\n\n\n\n\n\n\n\n\nday-mean\nday-s\nday-sd\nday-ci\nemArrivals-mean\nemArrivals-s\nemArrivals-sd\nemArrivals-ci\nelArrivals-mean\nelArrivals-s\n...\nzone7-available-sd\nzone7-available-ci\nzone8-type-mean\nzone8-type-s\nzone8-type-sd\nzone8-type-ci\nzone8-available-mean\nzone8-available-s\nzone8-available-sd\nzone8-available-ci\n\n\n\n\n0\n0.0\n0.0\n0.0\n0.0\n10.8\n48.8\n3.492850\n3.061618\n3.8\n30.8\n...\n0.000000\n0.000000\n6.0\n0.0\n0.0\n0.0\n15.0\n0.0\n0.000000\n0.000\n\n\n1\n1.0\n0.0\n0.0\n0.0\n6.6\n29.2\n2.701851\n2.368277\n6.0\n6.0\n...\n0.000000\n0.000000\n6.0\n0.0\n0.0\n0.0\n15.0\n0.0\n0.000000\n0.000\n\n\n2\n2.0\n0.0\n0.0\n0.0\n8.8\n82.8\n4.549725\n3.988010\n5.8\n6.8\n...\n2.792848\n2.448039\n6.0\n0.0\n0.0\n0.0\n14.0\n0.0\n0.000000\n0.000\n\n\n3\n3.0\n0.0\n0.0\n0.0\n5.4\n83.2\n4.560702\n3.997631\n4.0\n26.0\n...\n1.673320\n1.466730\n6.0\n0.0\n0.0\n0.0\n15.0\n0.0\n0.000000\n0.000\n\n\n4\n4.0\n0.0\n0.0\n0.0\n4.6\n57.2\n3.781534\n3.314661\n4.2\n14.8\n...\n1.095445\n0.960200\n6.0\n0.0\n0.0\n0.0\n14.2\n0.8\n0.447214\n0.392\n\n\n\n\n5 rows × 144 columns"
   },
   {
     "objectID": "reproduction/reproduction.html#create-plot",
     "href": "reproduction/reproduction.html#create-plot",
     "title": "Reproduction",
     "section": "Create plot",
-    "text": "Create plot\n\ndef add_ci(x, y, error, ax, color, alpha):\n    '''\n    Add shaded confidence interval to a subplot\n\n    Parameters:\n    -----------\n    x : column\n        Column being plot on x axis\n    y : column\n        Column with mean values being plot on y axis\n    error : column\n        Column containing confidence interval for mean on each day\n    ax : matplotlib axis object\n        Axis to add confidence interval to\n    color : string\n        Color of shaded confidence interval\n    alpha : number between 0 and 1\n        Transparency of shaded confidence interval\n    '''\n    ax.fill_between(x, y-error, y+error, color=color, alpha=alpha)\n\n\n# Set up number of subplots and figure size\nfig, ax = plt.subplots(3, 2, figsize=(15, 8))\n\n# Mean lines\nax[0,0].plot(data['el-capacity-mean'], color='black', marker='.')\nax[0,0].plot(data['el-available-mean'], color='green', marker='.')\nax[1,0].plot(data['el-capacity-mean'], color='black')\nax[2,0].plot(data['el-available-mean'], color='green')\nax[0,1].plot(data['c-capacity-mean'], color='black', marker='.')\nax[0,1].plot(data['c-available-mean'], color='green', marker='.')\nax[1,1].plot(data['c-capacity-mean'], color='black')\nax[2,1].plot(data['c-available-mean'], color='green')\n\n# Experimenting with adding confidence interval\nadd_ci(data['day-mean'], data['el-capacity-mean'], data['el-capacity-ci'],\n       ax=ax[1,0], color='black', alpha=0.2)\n\n# Set tick frequency and axis limits for subplots\nplt.setp(ax, xticks=np.arange(0,24), ylim=(0,12), yticks=np.arange(0,14,2))\nax[1,1].set_ylim(0,14)\nax[1,1].set_yticks(np.arange(0, 16, 2))\nax[2,1].set_ylim(0,14)\nax[2,1].set_yticks(np.arange(0, 16, 2))\n\nplt.show()"
+    "text": "Create plot\n\ndef add_ci(x, y, error, ax, color, alpha):\n    '''\n    Add shaded confidence interval to a subplot\n\n    Parameters:\n    -----------\n    x : column\n        Column being plot on x axis\n    y : column\n        Column with mean values being plot on y axis\n    error : column\n        Column containing confidence interval for mean on each day\n    ax : matplotlib axis object\n        Axis to add confidence interval to\n    color : string\n        Color of shaded confidence interval\n    alpha : number between 0 and 1\n        Transparency of shaded confidence interval\n    '''\n    ax.fill_between(x, y-error, y+error, color=color, alpha=alpha)\n\n\n# Set up number of subplots and figure size\nfig, ax = plt.subplots(3, 2, figsize=(15, 13))\n\n# Mean lines\nax[0,0].plot(data['el-capacity-mean'], color='black', marker='.',\n             label='Elective capacity mean')\nax[0,0].plot(data['el-available-mean'], color='green', marker='.',\n             label='Elective availability mean')\nax[1,0].plot(data['el-capacity-mean'], color='black',\n             label='Elective capacity mean')\nax[2,0].plot(data['el-available-mean'], color='green',\n             label='Elective availability mean')\nax[0,1].plot(data['c-capacity-mean'], color='black', marker='.',\n             label='COVID-19 capacity mean')\nax[0,1].plot(data['c-available-mean'], color='green', marker='.',\n             label='COVID-19 availability mean')\nax[1,1].plot(data['c-capacity-mean'], color='black',\n             label='COVID-19 capacity mean')\nax[2,1].plot(data['c-available-mean'], color='green',\n             label='COVID-19 availability mean')\n\n# Add confidence intervals\nadd_ci(data['day-mean'], data['el-capacity-mean'], data['el-capacity-ci'],\n       ax=ax[1,0], color='black', alpha=0.2)\nadd_ci(data['day-mean'], data['el-available-mean'], data['el-available-ci'],\n       ax=ax[2,0], color='green', alpha=0.2)\nadd_ci(data['day-mean'], data['c-capacity-mean'], data['c-capacity-ci'],\n       ax=ax[1,1], color='black', alpha=0.2)\nadd_ci(data['day-mean'], data['c-available-mean'], data['c-available-ci'],\n       ax=ax[2,1], color='green', alpha=0.2)\n\n# Set tick frequency and axis limits for subplots\nplt.setp(ax, xticks=np.arange(0,24), ylim=(0,12), yticks=np.arange(0,14,2))\nax[1,1].set_ylim(0,14)\nax[1,1].set_yticks(np.arange(0, 16, 2))\nax[2,1].set_ylim(0,14)\nax[2,1].set_yticks(np.arange(0, 16, 2))\n\n# Loop through the axis objects\ni = 0\nletter = ['a', 'd', 'b', 'e', 'c', 'f']\nfor ax in ax.flat:\n    # Add grid\n    ax.grid(True, alpha=0.2)\n    # Add X and Y axis labels\n    ax.set_xlabel('Days')\n    ax.set_ylabel('Beds')\n    # Add a legend below the plot\n    ax.legend(bbox_to_anchor=(0.7, -0.3))\n    # Annotate with a) - f), only including in tight_layout() for first two\n    an = ax.annotate(f'{letter[i]})', xy=(-0.09, 1.1),\n                     xycoords='axes fraction', fontsize=13, weight='bold')\n    if i &gt;= 2:\n       an.set_in_layout(False)\n    i += 1\n\n# Prevent overlap between subplots\nplt.tight_layout()\n\n# Save the figure\nplt.savefig(os.path.join(paths.outputs, paths.figure))\n\nplt.show()"
   },
   {
     "objectID": "original_study/charm/CHARM_INFO.html",
