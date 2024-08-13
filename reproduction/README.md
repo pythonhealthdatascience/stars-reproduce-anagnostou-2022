@@ -30,6 +30,8 @@ TBC
 
 TBC
 
+The run time for `reproduction.ipynb` or the tests is only a couple of seconds.
+
 <!-- Hint: On Linux, you can find specs by running the following commands in the terminal:
 cat /etc/os-release  # Shows operating system and version
 lscpu  # Shows computer model
