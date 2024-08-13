@@ -1,9 +1,12 @@
 name: anagnostou2022
 channels:
   - defaults
+  - conda-forge
 dependencies:
   - ipykernel=6.28.0
+  - jupyterlab=4.0.11
   - matplotlib=3.8.4
+  - notebook=7.0.8
   - pandas=2.2.2
   - pytest=7.4.4
   - python=3.9.10
