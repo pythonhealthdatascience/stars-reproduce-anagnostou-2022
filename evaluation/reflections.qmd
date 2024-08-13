@@ -22,6 +22,8 @@ This page contains reflections on the facilitators and barriers to this reproduc
 
 **Simple figures** - the figures were simply (just means and CI which are already calculated).
 
+**Speed of model** - the model was super quick (seconds!) which made it really easy to run and re-run each time.
+
 ## Full list of troubleshooting steps
 
 ::: {.callout-note appearance="minimal" collapse=false}
