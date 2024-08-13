@@ -2,33 +2,33 @@
 title: "Reflections"
 ---
 
-<!-- TODO: Remove this warning once completed assessment -->
-**Please note: This is a template page and has not yet been completed**
-
 This page contains reflections on the facilitators and barriers to this reproduction, as well as a full list of the troubleshooting steps taken to reproduce this work.
 
 ## What would have helped facilitate this reproduction?
 
-<!-- TODO: Add reflections. Example:
-**Provide environment (packages and versions)**
+**Figure** - provide code to produce the figure
 
-* Not all packages needed will be listed in the imports (e.g. greenlet, pathlib)
-* Didn't work with latest package versions, had to backdate it for it to work
--->
+## What did help facilitate this reproduction?
+
+**README** - clear README with instructions on how to run the model.
+
+**Data dictionary for input parameters** - although I didn't need this, this would have been great if I needed to change the input parameters at all.
+
+**Environment** - stated version of Python and provided requirements file (simpy, with version given in the app repository).
+
+**Simple results spreadsheet** - the layout of the results spreadsheet was simple, understandable and easy to read, making it easy to adapt into figures
+
+**Simple figures** - the figures were simply (just means and CI which are already calculated).
 
 ## Full list of troubleshooting steps
 
-::: {.callout-note appearance="minimal" collapse=true}
+::: {.callout-note appearance="minimal" collapse=false}
 ## View list
 
 Troubleshooting steps are grouped by theme, and the day these occurred is given in brackets at the end of each bullet.
 
-<!-- TODO: Add full list of troubleshooting steps. Example:
+### Figure
 
-### Environment
-
-* No environment file, and no versions for Python or Salabim in paper (2)
-* Dependencies based on PHC.py and package versions on or prior to 14th March 2021 (2)
--->
+* No code provided to produce figure, so wrote this from scratch (2-3)
 
 :::
