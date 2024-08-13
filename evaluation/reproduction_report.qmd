@@ -1,6 +1,6 @@
 ---
 title: "Summary report"
-subtitle: "For computational reproducibility assessment of Author et al. Year"
+subtitle: "For computational reproducibility assessment of Anagnostou et al. 2022"
 format:
   html:
     page-layout: full
@@ -14,15 +14,13 @@ bibliography: ../quarto_site/references.bib
 
 This paper includes two models - we have focussed just on the dynamiC Hospital wARd Management (CHARM) model. CHARM is a discrete-event simulation modelling intensive care units (ICU) in the COVID-19 pandemic (as well as subsequent stays in a recovery bed). It includes three types of admission to the ICU (emergency, elective or COVID-19). COVID-19 patients are kept seperate, and if they run out of capacity due to a surge in COVID-19 admissions, additional capacity can be pooled from the elective and emergency capacity.
 
-**Note:** This reproduction just focuses on the "CHARM" model from this paper.
-
 ## Computational reproducibility
 
 Successfully reproduced **1 out of 1 (100%)** of items from the scope in **2h 10m (5.4%)**.
 
 Required troubleshooting:
 
-* [List of required changes to code]
+* **Writing code to reproduce the figure**
 
 ::: {.panel-tabset}
 
