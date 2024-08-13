@@ -212,23 +212,18 @@ div.csl-indent {
 </header>
 
 
-<!-- TODO: Remove this warning once completed assessment -->
-<p><strong>Please note: This is a template page and has not yet been completed</strong></p>
 <p>This page evaluates the extent to which the original study meets the recommendations from the STARS framework for the sharing of code and associated materials from discrete-event simulation models (<span class="citation" data-cites="monks_towards_2024">Monks, Harper, and Mustafee (<a href="#ref-monks_towards_2024" role="doc-biblioref">2024</a>)</span>).</p>
 <p>Of the <strong>8</strong> essential STARS components:</p>
-<!-- TODO: Add counts from evaluation -->
 <ul>
-<li><strong>X</strong> were met fully (✅)</li>
-<li><strong>X</strong> was met partially (🟡)</li>
-<li><strong>X</strong> was not met (❌)</li>
+<li><strong>7</strong> were met fully (✅)</li>
+<li><strong>1</strong> was not met (❌)</li>
 </ul>
 <p>Of the <strong>5</strong> optional STARS components:</p>
-<!-- TODO: Add counts from evaluation -->
 <ul>
-<li><strong>X</strong> was met fully (✅)</li>
-<li><strong>X</strong> were not met (❌)</li>
+<li><strong>1</strong> was met fully (✅)</li>
+<li><strong>1</strong> was partially met (🟡)</li>
+<li><strong>3</strong> were not met (❌)</li>
 </ul>
-<!-- TODO: Fill in the table. Options are ✅ Fully, 🟡 Partially, or ❌ Not met -->
 <table class="caption-top table">
 <colgroup>
 <col style="width: 20%">
@@ -254,50 +249,50 @@ div.csl-indent {
 <tr class="even">
 <td>Open license</td>
 <td>Free and open-source software (FOSS) license (e.g.&nbsp;MIT, GNU Public License (GPL))</td>
-<td style="text-align: center;"><!----></td>
-<td><!----></td>
+<td style="text-align: center;">✅ Fully</td>
+<td>BSD 3-Clause License on GitLab, and MIT license on Figshare.</td>
 </tr>
 <tr class="odd">
 <td>Dependency management</td>
 <td>Specify software libraries, version numbers and sources (e.g.&nbsp;dependency management tools like virtualenv, conda, poetry)</td>
-<td style="text-align: center;"><!----></td>
-<td><!----></td>
+<td style="text-align: center;">✅ Fully</td>
+<td>Only dependencies are Python and Simpy. Python major + minor version is stated (3.9). Simpy is listed as a dependency in the repository, and in the other linked repository, a specific version is also given. Since both repositories are linked from the happy, I am satisfied it meets this requirement. The simpy dependency was as a virtualenv (<code>requirements.txt</code>)</td>
 </tr>
 <tr class="even">
 <td>FOSS model</td>
 <td>Coded in FOSS language (e.g.&nbsp;R, Julia, Python)</td>
-<td style="text-align: center;"><!----></td>
-<td><!----></td>
+<td style="text-align: center;">✅ Fully</td>
+<td>Python</td>
 </tr>
 <tr class="odd">
 <td>Minimum documentation</td>
 <td>Minimal instructions (e.g.&nbsp;in README) that overview (a) what model does, (b) how to install and run model to obtain results, and (c) how to vary parameters to run new experiments</td>
-<td style="text-align: center;"><!----></td>
-<td><!----></td>
+<td style="text-align: center;">✅ Fully</td>
+<td><code>README.md</code> provides brief description of model, explains how to install and run model, with the inputs being example CSV files. <code>CHARM_INFO.md</code> provides further information on all of the input parameters (like a data dictionary) to explain what these are, with the example <code>.csv</code> provided to show how these parameters are structured in a file.</td>
 </tr>
 <tr class="even">
 <td>ORCID</td>
 <td>ORCID for each study author</td>
-<td style="text-align: center;"><!----></td>
-<td><!----></td>
+<td style="text-align: center;">❌ Not met</td>
+<td><code>CONTRIBUTING.md</code> lists the full name of the author who developed the model as well as the supporting team, and acknowledgements for concept, but no ORCID IDs provided in repository or in FigShare</td>
 </tr>
 <tr class="odd">
 <td>Citation information</td>
 <td>Instructions on how to cite the research artefact (e.g.&nbsp;CITATION.cff file)</td>
-<td style="text-align: center;"><!----></td>
-<td><!----></td>
+<td style="text-align: center;">✅ Fully</td>
+<td>In the repository itself, <code>CONTRIBUTING.md</code> makes it much clearer who you would want to cite than a typical repository, but no explicit instructions on how to cite the artefact are provided. However, the repository does provide a DOI linking to long-term storage of the software on Figshare - and there, citation instructions are provided: “Anagnostou, Anastasia (2022). CHARM: dynamiC Hospital wARd Management. Brunel University London. Software. https://doi.org/10.17633/rd.brunel.18517892.v1”</td>
 </tr>
 <tr class="even">
 <td>Remote code repository</td>
 <td>Code available in a remote code repository (e.g.&nbsp;GitHub, GitLab, BitBucket)</td>
-<td style="text-align: center;"><!----></td>
-<td><!----></td>
+<td style="text-align: center;">✅ Fully</td>
+<td><a href="https://gitlab.com/anabrunel/charm" class="uri">https://gitlab.com/anabrunel/charm</a></td>
 </tr>
 <tr class="odd">
 <td>Open science archive</td>
 <td>Code stored in an open science archive with FORCE11 compliant citation and guaranteed persistance of digital artefacts (e.g.&nbsp;Figshare, Zenodo, the Open Science Framework (OSF), and the Computational Modeling in the Social and Ecological Sciences Network (CoMSES Net))</td>
-<td style="text-align: center;"><!----></td>
-<td><!----></td>
+<td style="text-align: center;">✅ Fully</td>
+<td>Code is archived on Figshare: <a href="https://doi.org/10.17633/rd.brunel.18517892.v1" class="uri">https://doi.org/10.17633/rd.brunel.18517892.v1</a></td>
 </tr>
 <tr class="even">
 <td><strong>Optional components</strong></td>
@@ -308,32 +303,32 @@ div.csl-indent {
 <tr class="odd">
 <td>Enhanced documentation</td>
 <td>Open and high quality documentation on how the model is implemented and works (e.g.&nbsp;via notebooks and markdown files, brought together using software like Quarto and Jupyter Book). Suggested content includes:<br>• Plain english summary of project and model<br>• Clarifying license<br>• Citation instructions<br>• Contribution instructions<br>• Model installation instructions<br>• Structured code walk through of model<br>• Documentation of modelling cycle using TRACE<br>• Annotated simulation reporting guidelines<br>• Clear description of model validation including its intended purpose</td>
-<td style="text-align: center;"><!----></td>
-<td><!----></td>
+<td style="text-align: center;">❌ Not met</td>
+<td>-</td>
 </tr>
 <tr class="even">
 <td>Documentation hosting</td>
 <td>Host documentation (e.g.&nbsp;with GitHub pages, GitLab pages, BitBucket Cloud, Quarto Pub)</td>
-<td style="text-align: center;"><!----></td>
-<td><!----></td>
+<td style="text-align: center;">❌ Not met</td>
+<td>-</td>
 </tr>
 <tr class="odd">
 <td>Online coding environment</td>
 <td>Provide an online environment where users can run and change code (e.g.&nbsp;BinderHub, Google Colaboratory, Deepnote)</td>
-<td style="text-align: center;"><!----></td>
-<td><!----></td>
+<td style="text-align: center;">❌ Not met</td>
+<td>-</td>
 </tr>
 <tr class="even">
 <td>Model interface</td>
 <td>Provide web application interface to the model so it is accessible to less technical simulation users</td>
-<td style="text-align: center;"><!----></td>
-<td><!----></td>
+<td style="text-align: center;">✅ Fully</td>
+<td>Not run as not in scope to run the app, but code is available at: <a href="https://gitlab.com/anabrunel/charm-app" class="uri">https://gitlab.com/anabrunel/charm-app</a></td>
 </tr>
 <tr class="odd">
 <td>Web app hosting</td>
 <td>Host web app online (e.g.&nbsp;Streamlit Community Cloud, ShinyApps hosting)</td>
-<td style="text-align: center;"><!----></td>
-<td><!----></td>
+<td style="text-align: center;">🟡 Partially</td>
+<td>The web app was hosted with heroku (<a href="https://charm-des-app.herokuapp.com/" class="uri">https://charm-des-app.herokuapp.com/</a>), although heroku is no longer available, so this is now inactive.</td>
 </tr>
 </tbody>
 </table>
