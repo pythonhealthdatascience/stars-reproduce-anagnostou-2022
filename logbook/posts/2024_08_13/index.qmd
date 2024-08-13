@@ -2,13 +2,13 @@
 title: "Day 3"
 author: "Amy Heather"
 date: "2024-08-13"
-categories: [reproduction]
+categories: [reproduction, report, compendium]
 bibliography: ../../../quarto_site/references.bib
 ---
 
 ::: {.callout-note}
 
-Finished reproduction of the single figure. Total time used: 2h 10m (5.4%). Evaluated against criteria and guidelines. Evaluation time: 1h 12m.
+Finished reproduction of the single figure. Total time used: 2h 10m (5.4%). Evaluated against criteria and guidelines. Evaluation time: 1h 12m. Then completed summary report, reflections, and research compendium stage.
 
 :::
 
@@ -88,3 +88,29 @@ Wrote up `reflections.qmd` based on logbook entries.
 ## Untimed: Summary report
 
 Completed summary report using template.
+
+## Untimed: Research compendium
+
+**Seperate folders for data, methods and outputs**: Moved scripts into a `script` folder. Had to modify `utils.py` as:
+
+* That automatically adds `./input` to your input file paths, but we need `../input`.
+* Path to output file is different now too
+
+**Tests**:
+
+* Add `pytest` to environment
+* Modify `utils.py` as it assumes you always want to save the results as a csv file in `../output/OUT_STATS.csv`. Tried to amend this following the structure they had already set up for the input file paths. **Note:** It was quite tricky to do this - this was pretty hard coded into the script.
+
+**Run time**: Add note that run time is only a couple of seconds to the notebook and README
+
+**Dockerfile**: Created Dockerfile as I did for [Shoaib et al. 2022](https://github.com/pythonhealthdatascience/stars-reproduce-shoaib-2022/blob/main/reproduction/docker/).
+
+* Add `conda-forge` channel, plus `jupyterlab` and `notebook` packages, to environment
+* Built image, created container, opened JupyterLab, and ran both the notebook and test successfully.
+
+**GitHub container repository**:
+
+* Activated GitHub action
+* Pulled container and tested running notebook and test successfully
+
+**README**: Completed the README.
