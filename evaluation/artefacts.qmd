@@ -3,40 +3,34 @@ title: "STARS framework"
 bibliography: ../quarto_site/references.bib
 ---
 
-<!-- TODO: Remove this warning once completed assessment -->
-**Please note: This is a template page and has not yet been completed**
-
 This page evaluates the extent to which the original study meets the recommendations from the STARS framework for the sharing of code and associated materials from discrete-event simulation models (@monks_towards_2024).
 
 Of the **8** essential STARS components:
 
-<!-- TODO: Add counts from evaluation -->
-* **X** were met fully (✅)
-* **X** was met partially (🟡)
-* **X** was not met (❌)
+* **7** were met fully (✅)
+* **1** was not met (❌)
 
 Of the **5** optional STARS components:
 
-<!-- TODO: Add counts from evaluation -->
-* **X** was met fully (✅)
-* **X** were not met (❌)
+* **1** was met fully (✅)
+* **1** was partially met (🟡)
+* **3** were not met (❌)
 
-<!-- TODO: Fill in the table. Options are ✅ Fully, 🟡 Partially, or ❌ Not met -->
 | Component | Description | Met by study? | Evidence/location |
 | - | - | :-: | - |
 | **Essential components** |
-| Open license | Free and open-source software (FOSS) license (e.g. MIT, GNU Public License (GPL)) | <!----> | <!----> |
-| Dependency management | Specify software libraries, version numbers and sources (e.g. dependency management tools like virtualenv, conda, poetry) | <!----> | <!----> |
-| FOSS model | Coded in FOSS language (e.g. R, Julia, Python) | <!----> | <!----> |
-| Minimum documentation | Minimal instructions (e.g. in README) that overview (a) what model does, (b) how to install and run model to obtain results, and (c) how to vary parameters to run new experiments | <!----> | <!----> |
-| ORCID | ORCID for each study author | <!----> | <!----> |
-| Citation information | Instructions on how to cite the research artefact (e.g. CITATION.cff file) | <!----> | <!----> |
-| Remote code repository | Code available in a remote code repository (e.g. GitHub, GitLab, BitBucket) | <!----> | <!----> |
-| Open science archive | Code stored in an open science archive with FORCE11 compliant citation and guaranteed persistance of digital artefacts (e.g. Figshare, Zenodo, the Open Science Framework (OSF), and the Computational Modeling in the Social and Ecological Sciences Network (CoMSES Net)) | <!----> | <!----> |
+| Open license | Free and open-source software (FOSS) license (e.g. MIT, GNU Public License (GPL)) | ✅ Fully | BSD 3-Clause License on GitLab, and MIT license on Figshare. |
+| Dependency management | Specify software libraries, version numbers and sources (e.g. dependency management tools like virtualenv, conda, poetry) | ✅ Fully | Only dependencies are Python and Simpy. Python major + minor version is stated (3.9). Simpy is listed as a dependency in the repository, and in the other linked repository, a specific version is also given. Since both repositories are linked from the happy, I am satisfied it meets this requirement. The simpy dependency was as a virtualenv (`requirements.txt`) |
+| FOSS model | Coded in FOSS language (e.g. R, Julia, Python) | ✅ Fully | Python |
+| Minimum documentation | Minimal instructions (e.g. in README) that overview (a) what model does, (b) how to install and run model to obtain results, and (c) how to vary parameters to run new experiments | ✅ Fully | `README.md` provides brief description of model, explains how to install and run model, with the inputs being example CSV files. `CHARM_INFO.md` provides further information on all of the input parameters (like a data dictionary) to explain what these are, with the example `.csv` provided to show how these parameters are structured in a file. |
+| ORCID | ORCID for each study author | ❌ Not met | `CONTRIBUTING.md` lists the full name of the author who developed the model as well as the supporting team, and acknowledgements for concept, but no ORCID IDs provided in repository or in FigShare |
+| Citation information | Instructions on how to cite the research artefact (e.g. CITATION.cff file) | ✅ Fully | In the repository itself, `CONTRIBUTING.md` makes it much clearer who you would want to cite than a typical repository, but no explicit instructions on how to cite the artefact are provided. However, the repository does provide a DOI linking to long-term storage of the software on Figshare - and there, citation instructions are provided: "Anagnostou, Anastasia (2022). CHARM: dynamiC Hospital wARd Management. Brunel University London. Software. https://doi.org/10.17633/rd.brunel.18517892.v1" |
+| Remote code repository | Code available in a remote code repository (e.g. GitHub, GitLab, BitBucket) | ✅ Fully | <https://gitlab.com/anabrunel/charm> |
+| Open science archive | Code stored in an open science archive with FORCE11 compliant citation and guaranteed persistance of digital artefacts (e.g. Figshare, Zenodo, the Open Science Framework (OSF), and the Computational Modeling in the Social and Ecological Sciences Network (CoMSES Net)) | ✅ Fully | Code is archived on Figshare: <https://doi.org/10.17633/rd.brunel.18517892.v1> |
 | **Optional components** |
-| Enhanced documentation | Open and high quality documentation on how the model is implemented and works  (e.g. via notebooks and markdown files, brought together using software like Quarto and Jupyter Book). Suggested content includes:<br>• Plain english summary of project and model<br>• Clarifying license<br>• Citation instructions<br>• Contribution instructions<br>• Model installation instructions<br>• Structured code walk through of model<br>• Documentation of modelling cycle using TRACE<br>• Annotated simulation reporting guidelines<br>• Clear description of model validation including its intended purpose | <!----> | <!----> |
-| Documentation hosting | Host documentation (e.g. with GitHub pages, GitLab pages, BitBucket Cloud, Quarto Pub) | <!----> | <!----> |
-| Online coding environment | Provide an online environment where users can run and change code (e.g. BinderHub, Google Colaboratory, Deepnote) | <!----> | <!----> |
-| Model interface | Provide web application interface to the model so it is accessible to less technical simulation users | <!----> | <!----> |
-| Web app hosting | Host web app online (e.g. Streamlit Community Cloud, ShinyApps hosting) | <!----> | <!----> |
+| Enhanced documentation | Open and high quality documentation on how the model is implemented and works  (e.g. via notebooks and markdown files, brought together using software like Quarto and Jupyter Book). Suggested content includes:<br>• Plain english summary of project and model<br>• Clarifying license<br>• Citation instructions<br>• Contribution instructions<br>• Model installation instructions<br>• Structured code walk through of model<br>• Documentation of modelling cycle using TRACE<br>• Annotated simulation reporting guidelines<br>• Clear description of model validation including its intended purpose | ❌ Not met | - |
+| Documentation hosting | Host documentation (e.g. with GitHub pages, GitLab pages, BitBucket Cloud, Quarto Pub) | ❌ Not met | - |
+| Online coding environment | Provide an online environment where users can run and change code (e.g. BinderHub, Google Colaboratory, Deepnote) | ❌ Not met | - |
+| Model interface | Provide web application interface to the model so it is accessible to less technical simulation users | ✅ Fully | Not run as not in scope to run the app, but code is available at: <https://gitlab.com/anabrunel/charm-app> |
+| Web app hosting | Host web app online (e.g. Streamlit Community Cloud, ShinyApps hosting) | 🟡 Partially | The web app was hosted with heroku (<https://charm-des-app.herokuapp.com/>), although heroku is no longer available, so this is now inactive. |
 : {tbl-colwidths="[20, 35, 20, 25]"}
