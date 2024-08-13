@@ -8,7 +8,7 @@ bibliography: ../../../quarto_site/references.bib
 
 ::: {.callout-note}
 
-TBC. Total time used: TBCh TBCm (TBC%)
+Archive scope, run code, start on figure. Total time used: 1h 46m (4.4%)
 
 :::
 
@@ -50,8 +50,7 @@ I create a conda environment in `reproduction/` (which has a benefit over the vi
 Copied relevant files to `reproduction/` then, following their instruction, ran:
 
 ```
-python3 main.py -z input/ZONES.csv -p input/ICU_INPUT_PARAM
-S.csv -c input/DAILY_ARRIVALS.csv
+python3 main.py -z ZONES.csv -p ICU_INPUT_PARAMS.csv -c DAILY_ARRIVALS.csv
 ```
 
 This ran quickly and without issue, producing identical results as provided in `OUT_STATS.csv`. This is a pretty simple, small, logical file.
@@ -70,3 +69,23 @@ Created `reproduction.ipynb`, which required adding `ipykernel` and `pandas` and
 The column names in the model output csv were easy to interpret, and so I could identify the appropriate columns needed for the plots.
 
 Ran out of time to finish today.
+
+## Timings
+
+```{python}
+import sys
+sys.path.append('../')
+from timings import calculate_times
+
+# Minutes used prior to today
+used_to_date = 45
+
+# Times from today
+times = [
+    ('15.44', '15.50'),
+    ('15.58', '16.11'),
+    ('16.13', '16.24'),
+    ('16.29', '17.00')]
+
+calculate_times(used_to_date, times)
+```

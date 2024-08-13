@@ -1,0 +1,36 @@
+---
+title: "Day 3"
+author: "Amy Heather"
+date: "2024-08-13"
+categories: [reproduction]
+bibliography: ../../../quarto_site/references.bib
+---
+
+::: {.callout-note}
+
+Finished reproduction of the single figure. Total time used: 2h 10m (5.4%)
+
+:::
+
+## 09.14-09.38: Resuming recreation of figure
+
+Continuing from yesterday. I included the running of the model within `reproduction.ipynb`, and finished up the Figure so it matches the paper.
+
+Feel this is reproduced at 09.38.
+
+## Timings for reproduction
+
+```{python}
+import sys
+sys.path.append('../')
+from timings import calculate_times
+
+# Minutes used prior to today
+used_to_date = 106
+
+# Times from today
+times = [
+    ('09.14', '09.38')]
+
+calculate_times(used_to_date, times)
+```
