@@ -8,7 +8,7 @@ bibliography: ../../../quarto_site/references.bib
 
 ::: {.callout-note}
 
-Finished reproduction of the single figure. Total time used: 2h 10m (5.4%)
+Finished reproduction of the single figure. Total time used: 2h 10m (5.4%). Evaluated against criteria and guidelines. Evaluation time: 1h 12m.
 
 :::
 
@@ -17,6 +17,10 @@ Finished reproduction of the single figure. Total time used: 2h 10m (5.4%)
 Continuing from yesterday. I included the running of the model within `reproduction.ipynb`, and finished up the Figure so it matches the paper.
 
 Feel this is reproduced at 09.38.
+
+## Untimed: Reproduction success
+
+Filled in reproduction success page
 
 ## Timings for reproduction
 
@@ -34,3 +38,53 @@ times = [
 
 calculate_times(used_to_date, times)
 ```
+
+## 09.47-10.00: STARS evaluation
+
+Evaluate code against STARS framework.
+
+## 10.03-10.09: Badges
+
+Evaluate code against against journal badge criteria. Explaining some of the decisions:
+
+* **Complete set of materials** - no ❌, as didn't include code to create the figure itself
+* **Carefully documented** - yes ✅, considering the support of `CHARM_INFO.md` alongside the `README.md` to explain what the inputs were (hence support reuse and change of those inputs, since it explains that we run by calling `.csv` files with inputs)
+* **README with step-by-step instructions** - yes ✅, I was a little more uncertain on this one, since the README doesn't explicitly say how to make the figure, but it does provide instructions that lead you to regenerate the exact model results from the paper, and so I feel that it does provide instructions to reproduce results sufficiently (although would be more complete to include instructions for figure too - so if it weren't a yes/no decision for badges, I would've said this was partially met).
+
+## 10.17-10.46: STRESS-DES
+
+Evaluate paper against STRESS-DES reporting guidelines.
+
+## 10.59-11.23: ISPOR-SDM
+
+Evaluate paper against guidelines from @zhang_reporting_2020 derived from ISPOR-SDM. Explaining some of the decisions:
+
+* **Run length** - not provided. Can understand that this is because this is an example paper, but as it does not provide an example run length, or range of typical/expected/good run lengths, I feel this is not met (as that could have been provided). 
+
+## Timings for evaluation
+
+```{python}
+import sys
+sys.path.append('../')
+from timings import calculate_times
+
+# Minutes used prior to today
+used_to_date = 0
+
+# Times from today
+times = [
+    ('09.47', '10.00'),
+    ('10.03', '10.09'),
+    ('10.17', '10.46'),
+    ('10.59', '11.23')]
+
+calculate_times(used_to_date, times, limit=False)
+```
+
+## Untimed: Reflections
+
+Wrote up `reflections.qmd` based on logbook entries.
+
+## Untimed: Summary report
+
+Completed summary report using template.
