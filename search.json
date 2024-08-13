@@ -88,21 +88,28 @@
     "href": "evaluation/reflections.html",
     "title": "Reflections",
     "section": "",
-    "text": "Please note: This is a template page and has not yet been completed\nThis page contains reflections on the facilitators and barriers to this reproduction, as well as a full list of the troubleshooting steps taken to reproduce this work."
+    "text": "This page contains reflections on the facilitators and barriers to this reproduction, as well as a full list of the troubleshooting steps taken to reproduce this work."
   },
   {
     "objectID": "evaluation/reflections.html#what-would-have-helped-facilitate-this-reproduction",
     "href": "evaluation/reflections.html#what-would-have-helped-facilitate-this-reproduction",
     "title": "Reflections",
     "section": "What would have helped facilitate this reproduction?",
-    "text": "What would have helped facilitate this reproduction?"
+    "text": "What would have helped facilitate this reproduction?\nFigure - provide code to produce the figure"
+  },
+  {
+    "objectID": "evaluation/reflections.html#what-did-help-facilitate-this-reproduction",
+    "href": "evaluation/reflections.html#what-did-help-facilitate-this-reproduction",
+    "title": "Reflections",
+    "section": "What did help facilitate this reproduction?",
+    "text": "What did help facilitate this reproduction?\nREADME - clear README with instructions on how to run the model.\nData dictionary for input parameters - although I didn’t need this, this would have been great if I needed to change the input parameters at all.\nEnvironment - stated version of Python and provided requirements file (simpy, with version given in the app repository).\nSimple results spreadsheet - the layout of the results spreadsheet was simple, understandable and easy to read, making it easy to adapt into figures\nSimple figures - the figures were simply (just means and CI which are already calculated)."
   },
   {
     "objectID": "evaluation/reflections.html#full-list-of-troubleshooting-steps",
     "href": "evaluation/reflections.html#full-list-of-troubleshooting-steps",
     "title": "Reflections",
     "section": "Full list of troubleshooting steps",
-    "text": "Full list of troubleshooting steps\n\n\n\n\n\n\nView list\n\n\n\n\n\nTroubleshooting steps are grouped by theme, and the day these occurred is given in brackets at the end of each bullet."
+    "text": "Full list of troubleshooting steps\n\n\n\n\n\n\nView list\n\n\n\n\n\nTroubleshooting steps are grouped by theme, and the day these occurred is given in brackets at the end of each bullet.\n\nFigure\n\nNo code provided to produce figure, so wrote this from scratch (2-3)"
   },
   {
     "objectID": "evaluation/scope.html",
@@ -452,21 +459,21 @@
     "href": "evaluation/reproduction_report.html",
     "title": "Summary report",
     "section": "",
-    "text": "Anagnostou, A. Groen, D. Taylor, S. Suleimenova, D. Abubakar, N. Saha, A. Mintram, K. Ghorbani, M. Daroge, H. Islam, T. Xue, Y. Okine, E. Anokye, N. FACS-CHARM: A Hybrid Agent-Based and Discrete-Event Simulation Approach for Covid-19 Management at Regional Level. 2022 Winter Simulation Conference (WSC), Singapore, pp. 1223-1234. (2022). https://doi.org/10.1109/WSC57314.2022.10015462.\n\nThis paper includes two models - we have focussed just on the dynamiC Hospital wARd Management (CHARM) model. CHARM is a discrete-event simulation modelling intensive care units (ICU) in the COVID-19 pandemic (as well as subsequent stays in a recovery bed). It includes three types of admission to the ICU (emergency, elective or COVID-19). COVID-19 patients are kept seperate, and if they run out of capacity due to a surge in COVID-19 admissions, additional capacity can be pooled from the elective and emergency capacity.\nNote: This reproduction just focuses on the “CHARM” model from this paper."
+    "text": "Anagnostou, A. Groen, D. Taylor, S. Suleimenova, D. Abubakar, N. Saha, A. Mintram, K. Ghorbani, M. Daroge, H. Islam, T. Xue, Y. Okine, E. Anokye, N. FACS-CHARM: A Hybrid Agent-Based and Discrete-Event Simulation Approach for Covid-19 Management at Regional Level. 2022 Winter Simulation Conference (WSC), Singapore, pp. 1223-1234. (2022). https://doi.org/10.1109/WSC57314.2022.10015462.\n\nThis paper includes two models - we have focussed just on the dynamiC Hospital wARd Management (CHARM) model. CHARM is a discrete-event simulation modelling intensive care units (ICU) in the COVID-19 pandemic (as well as subsequent stays in a recovery bed). It includes three types of admission to the ICU (emergency, elective or COVID-19). COVID-19 patients are kept seperate, and if they run out of capacity due to a surge in COVID-19 admissions, additional capacity can be pooled from the elective and emergency capacity."
   },
   {
     "objectID": "evaluation/reproduction_report.html#study",
     "href": "evaluation/reproduction_report.html#study",
     "title": "Summary report",
     "section": "",
-    "text": "Anagnostou, A. Groen, D. Taylor, S. Suleimenova, D. Abubakar, N. Saha, A. Mintram, K. Ghorbani, M. Daroge, H. Islam, T. Xue, Y. Okine, E. Anokye, N. FACS-CHARM: A Hybrid Agent-Based and Discrete-Event Simulation Approach for Covid-19 Management at Regional Level. 2022 Winter Simulation Conference (WSC), Singapore, pp. 1223-1234. (2022). https://doi.org/10.1109/WSC57314.2022.10015462.\n\nThis paper includes two models - we have focussed just on the dynamiC Hospital wARd Management (CHARM) model. CHARM is a discrete-event simulation modelling intensive care units (ICU) in the COVID-19 pandemic (as well as subsequent stays in a recovery bed). It includes three types of admission to the ICU (emergency, elective or COVID-19). COVID-19 patients are kept seperate, and if they run out of capacity due to a surge in COVID-19 admissions, additional capacity can be pooled from the elective and emergency capacity.\nNote: This reproduction just focuses on the “CHARM” model from this paper."
+    "text": "Anagnostou, A. Groen, D. Taylor, S. Suleimenova, D. Abubakar, N. Saha, A. Mintram, K. Ghorbani, M. Daroge, H. Islam, T. Xue, Y. Okine, E. Anokye, N. FACS-CHARM: A Hybrid Agent-Based and Discrete-Event Simulation Approach for Covid-19 Management at Regional Level. 2022 Winter Simulation Conference (WSC), Singapore, pp. 1223-1234. (2022). https://doi.org/10.1109/WSC57314.2022.10015462.\n\nThis paper includes two models - we have focussed just on the dynamiC Hospital wARd Management (CHARM) model. CHARM is a discrete-event simulation modelling intensive care units (ICU) in the COVID-19 pandemic (as well as subsequent stays in a recovery bed). It includes three types of admission to the ICU (emergency, elective or COVID-19). COVID-19 patients are kept seperate, and if they run out of capacity due to a surge in COVID-19 admissions, additional capacity can be pooled from the elective and emergency capacity."
   },
   {
     "objectID": "evaluation/reproduction_report.html#computational-reproducibility",
     "href": "evaluation/reproduction_report.html#computational-reproducibility",
     "title": "Summary report",
     "section": "Computational reproducibility",
-    "text": "Computational reproducibility\nSuccessfully reproduced 1 out of 1 (100%) of items from the scope in 2h 10m (5.4%).\nRequired troubleshooting:\n\n[List of required changes to code]\n\n\nFigure 3\n\n\nCannot display original figure as do not have permissions for reuse, but can view at Anagnostou et al. (2022)\nReproduction:"
+    "text": "Computational reproducibility\nSuccessfully reproduced 1 out of 1 (100%) of items from the scope in 2h 10m (5.4%).\nRequired troubleshooting:\n\nWriting code to reproduce the figure\n\n\nFigure 3\n\n\nCannot display original figure as do not have permissions for reuse, but can view at Anagnostou et al. (2022)\nReproduction:"
   },
   {
     "objectID": "evaluation/reproduction_report.html#evaluation-against-guidelines",
