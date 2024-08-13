@@ -8,6 +8,8 @@ This page contains reflections on the facilitators and barriers to this reproduc
 
 **Figure** - provide code to produce the figure
 
+**Note:** Although not needed for the reproduction itself, when I tried to amend the **name and location of the csv file** output the model for use in tests, this was very tricky to do as it was hard coded into the scripts and I found difficult to amend due to how the model is run and set up.
+
 ## What did help facilitate this reproduction?
 
 **README** - clear README with instructions on how to run the model.
