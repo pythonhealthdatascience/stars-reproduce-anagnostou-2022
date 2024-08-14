@@ -24,6 +24,8 @@ This page contains reflections on the facilitators and barriers to this reproduc
 
 **Speed of model** - the model was super quick (seconds!) which made it really easy to run and re-run each time.
 
+**Random seed** - the authors included a random seed so the results I got were identical to the original (so no need for any subjectivity in deciding whether its similar enough, as I could perfectly reproduce).
+
 ## Full list of troubleshooting steps
 
 ::: {.callout-note appearance="minimal" collapse=false}
