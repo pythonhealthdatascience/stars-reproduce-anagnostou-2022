@@ -2,7 +2,7 @@
 title: "Day 3"
 author: "Amy Heather"
 date: "2024-08-13"
-categories: [reproduction, report, compendium]
+categories: [reproduction, report, evaluation, compendium]
 bibliography: ../../../quarto_site/references.bib
 ---
 

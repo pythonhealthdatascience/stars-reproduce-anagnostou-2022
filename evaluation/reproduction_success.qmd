@@ -35,8 +35,7 @@ success_interactive(times_df)
 
 ## Figure 3
 
-<!-- TODO: Add this once have consensus
-**Consensus: Not reproduced / Successfully reproduced** -->
+**Consensus: Successfully reproduced**
 
 Original:
 

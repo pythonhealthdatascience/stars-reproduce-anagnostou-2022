@@ -16,7 +16,7 @@ This paper includes two models - we have focussed just on the dynamiC Hospital w
 
 ## Computational reproducibility
 
-Successfully reproduced **1 out of 1 (100%)** of items from the scope in **2h 10m (5.4%)**.
+Successfully reproduced **1 out of 1 (100%)** of items from the scope in **2h 11m (5.5%)**.
 
 Required troubleshooting:
 

@@ -1,0 +1,34 @@
+---
+title: "Day 4"
+author: "Amy Heather"
+date: "2024-09-04"
+categories: [reproduction]
+bibliography: ../../../quarto_site/references.bib
+---
+
+::: {.callout-note}
+
+Consensus on reproduction success. Updated reproduction time: 2h 11m (5.5%).
+
+:::
+
+## 10.15-10.16: Consensus on reproduction
+
+Shared the reproduced item with Tom on return from annual leave, who confirmed he was happy that this has been on successfully reproduced.
+
+## Timings for reproduction
+
+```{python}
+import sys
+sys.path.append('../')
+from timings import calculate_times
+
+# Minutes used prior to today
+used_to_date = 130
+
+# Times from today
+times = [
+    ('10.15', '10.16')]
+
+calculate_times(used_to_date, times)
+```
