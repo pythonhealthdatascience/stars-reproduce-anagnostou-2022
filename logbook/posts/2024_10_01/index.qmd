@@ -22,6 +22,12 @@ Tom did a test-run on XPS13 with Ubuntu 22.04:
 * Dockerfile - container built successfully
 * Docker container - launched successfully and ran reproduction.ipynb
 
+## Untimed: Checking "unmet" criteria in evaluation
+
+Tom also looked over the unmet criteria. Agreed in all cases. For reporting guidelines, he noted:
+
+"The one that I thought about the most was "assumptions".  I re-read the CHARM section of the paper and my view is that I wasn't clear on what were assumptions due to lack of knowledge/data and what wasn't. I suspect using something like the Triangular distribution was an assumption as they had limited data, but its not stated explicitly.  I guess that's an issue with the limited space in a conference paper more than anything.  So I agree with your not met."
+
 ## Untimed: Wrap-up
 
 This marks the reproduction as complete, so we are able to:
