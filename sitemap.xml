@@ -1,87 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/index.html</loc>
-    <lastmod>2024-09-09T09:52:34.900Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/logbook/posts/2024_08_13/index.html</loc>
-    <lastmod>2024-09-09T09:52:34.900Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/logbook/posts/2024_08_12/index.html</loc>
-    <lastmod>2024-09-09T09:52:34.900Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/original_study/charm/CONTRIBUTING.html</loc>
-    <lastmod>2024-09-09T09:52:34.904Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/CHANGELOG.html</loc>
-    <lastmod>2024-09-09T09:52:34.900Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/quarto_site/study_publication.html</loc>
-    <lastmod>2024-09-09T09:52:34.912Z</lastmod>
-  </url>
-  <url>
     <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/CONTRIBUTING.html</loc>
-    <lastmod>2024-09-09T09:52:34.900Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/evaluation/scope.html</loc>
-    <lastmod>2024-09-09T09:52:34.900Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/evaluation/artefacts.html</loc>
-    <lastmod>2024-09-09T09:52:34.900Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/evaluation/reproduction_report.html</loc>
-    <lastmod>2024-09-09T09:52:34.900Z</lastmod>
+    <lastmod>2024-10-02T15:14:53.687Z</lastmod>
   </url>
   <url>
     <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/reproduction/scripts/reproduction.html</loc>
-    <lastmod>2024-09-09T09:52:34.916Z</lastmod>
+    <lastmod>2024-10-02T15:14:53.700Z</lastmod>
   </url>
   <url>
-    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/evaluation/badges.html</loc>
-    <lastmod>2024-09-09T09:52:34.900Z</lastmod>
+    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/quarto_site/study_publication.html</loc>
+    <lastmod>2024-10-02T15:14:53.696Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/original_study/charm/CONTRIBUTING.html</loc>
+    <lastmod>2024-10-02T15:14:53.689Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/evaluation/reproduction_report.html</loc>
+    <lastmod>2024-10-02T15:14:53.688Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/evaluation/scope.html</loc>
+    <lastmod>2024-10-02T15:14:53.688Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/evaluation/artefacts.html</loc>
+    <lastmod>2024-10-02T15:14:53.687Z</lastmod>
   </url>
   <url>
     <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/evaluation/reproduction_success.html</loc>
-    <lastmod>2024-09-09T09:52:34.900Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/evaluation/reporting.html</loc>
-    <lastmod>2024-09-09T09:52:34.900Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/evaluation/reflections.html</loc>
-    <lastmod>2024-09-09T09:52:34.900Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/quarto_site/license.html</loc>
-    <lastmod>2024-09-09T09:52:34.904Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/quarto_site/reproduction_readme.html</loc>
-    <lastmod>2024-09-09T09:52:34.904Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/original_study/charm/CHARM_INFO.html</loc>
-    <lastmod>2024-09-09T09:52:34.904Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/logbook/logbook.html</loc>
-    <lastmod>2024-09-09T09:52:34.900Z</lastmod>
+    <lastmod>2024-10-02T15:14:53.688Z</lastmod>
   </url>
   <url>
     <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/logbook/posts/2024_09_04/index.html</loc>
-    <lastmod>2024-09-09T09:52:34.904Z</lastmod>
+    <lastmod>2024-10-02T15:14:53.689Z</lastmod>
   </url>
   <url>
     <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/logbook/posts/2024_08_01/index.html</loc>
-    <lastmod>2024-09-09T09:52:34.900Z</lastmod>
+    <lastmod>2024-10-02T15:14:53.688Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/logbook/posts/2024_08_12/index.html</loc>
+    <lastmod>2024-10-02T15:14:53.688Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/index.html</loc>
+    <lastmod>2024-10-02T15:14:53.688Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/logbook/posts/2024_10_01/index.html</loc>
+    <lastmod>2024-10-02T15:14:53.689Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/logbook/posts/2024_08_13/index.html</loc>
+    <lastmod>2024-10-02T15:14:53.688Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/logbook/logbook.html</loc>
+    <lastmod>2024-10-02T15:14:53.688Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/evaluation/reflections.html</loc>
+    <lastmod>2024-10-02T15:14:53.687Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/evaluation/badges.html</loc>
+    <lastmod>2024-10-02T15:14:53.687Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/evaluation/reporting.html</loc>
+    <lastmod>2024-10-02T15:14:53.688Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/original_study/charm/CHARM_INFO.html</loc>
+    <lastmod>2024-10-02T15:14:53.689Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/quarto_site/license.html</loc>
+    <lastmod>2024-10-02T15:14:53.690Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/quarto_site/reproduction_readme.html</loc>
+    <lastmod>2024-10-02T15:14:53.691Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/CHANGELOG.html</loc>
+    <lastmod>2024-10-02T15:14:53.687Z</lastmod>
   </url>
 </urlset>

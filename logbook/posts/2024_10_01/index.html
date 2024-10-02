@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Amy Heather">
-<meta name="dcterms.date" content="2024-08-12">
+<meta name="dcterms.date" content="2024-10-02">
 
-<title>Day 2 – Reproducing Anagnostou et al.&nbsp;2022</title>
+<title>Day 5 – Reproducing Anagnostou et al.&nbsp;2022</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,40 +21,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -203,7 +169,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Day 2</h1>
+      <h1 class="title">Day 5</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">reproduction</div>
               </div>
@@ -223,7 +189,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">August 12, 2024</p>
+        <p class="date">October 2, 2024</p>
       </div>
     </div>
     
@@ -239,13 +205,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#archive-scope" id="toc-archive-scope" class="nav-link active" data-scroll-target="#archive-scope">15.44-15.50: Archive scope</a></li>
-  <li><a href="#look-over-code-and-create-environment" id="toc-look-over-code-and-create-environment" class="nav-link" data-scroll-target="#look-over-code-and-create-environment">15.58-16.11: Look over code and create environment</a></li>
-  <li><a href="#run-code" id="toc-run-code" class="nav-link" data-scroll-target="#run-code">16.13-16.24: Run code</a></li>
-  <li><a href="#write-plotting-function" id="toc-write-plotting-function" class="nav-link" data-scroll-target="#write-plotting-function">16.29-17.00: Write plotting function</a></li>
-  <li><a href="#timings" id="toc-timings" class="nav-link" data-scroll-target="#timings">Timings</a></li>
+  <li><a href="#untimed-test-run-of-reproduction-package" id="toc-untimed-test-run-of-reproduction-package" class="nav-link active" data-scroll-target="#untimed-test-run-of-reproduction-package">Untimed: Test-run of reproduction package</a></li>
+  <li><a href="#untimed-wrap-up" id="toc-untimed-wrap-up" class="nav-link" data-scroll-target="#untimed-wrap-up">Untimed: Wrap-up</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022/edit/main/logbook/posts/2024_08_12/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022/edit/main/logbook/posts/2024_10_01/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -264,82 +227,27 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Archive scope, run code, start on figure. Total time used: 1h 46m (4.4%)</p>
+<p>Test-run of reproduction package, informing author/s and archiving repository.</p>
 </div>
 </div>
-<section id="archive-scope" class="level2">
-<h2 class="anchored" data-anchor-id="archive-scope">15.44-15.50: Archive scope</h2>
-<p>Having received consensus on scope, I can now archive it.</p>
+<section id="untimed-test-run-of-reproduction-package" class="level2">
+<h2 class="anchored" data-anchor-id="untimed-test-run-of-reproduction-package">Untimed: Test-run of reproduction package</h2>
+<p>Tom did a test-run on XPS13 with Ubuntu 22.04:</p>
 <ul>
-<li>Updated <code>CITATION.cff</code> version number and date</li>
-<li>Add entry to <code>CHANGELOG.md</code></li>
-<li>Set to sync on Zenodo (already activated by Tom)</li>
-<li>Create GitHub release</li>
-<li>Add DOI to <code>README.md</code></li>
+<li>Environment creation - confirm works as expected</li>
+<li>Pytest - completed successfully</li>
+<li>Reproduction.ipynb - reproduces charts</li>
+<li>Dockerfile - container built successfully</li>
+<li>Docker container - launched successfully and ran reproduction.ipynb</li>
 </ul>
 </section>
-<section id="look-over-code-and-create-environment" class="level2">
-<h2 class="anchored" data-anchor-id="look-over-code-and-create-environment">15.58-16.11: Look over code and create environment</h2>
-<p>Their README provides instructions to run the code - installing simpy, and then running <code>python3 main.py -z ZONES.csv -p ICU_INPUT_PARAMS.csv -c DAILY_ARRIVALS.csv</code>, noting that example input files are available in <code>input/</code>.</p>
-<p>A dockerfile is also provided. This installs Python 3.9 and the dependencies from <code>requirements.txt</code> (which just lists <code>simpy</code>, no version).</p>
-<p><code>CHARM_INFO.md</code> is a data dictionary, explaining info provided to the model and the input parameter columns and so on.</p>
-<p><code>main.py</code> runs <code>utils.args()</code> and <code>model.runSim()</code>.</p>
-<p>To identify versions, I looked at the dates of the article and repository…</p>
+<section id="untimed-wrap-up" class="level2">
+<h2 class="anchored" data-anchor-id="untimed-wrap-up">Untimed: Wrap-up</h2>
+<p>This marks the reproduction as complete, so we are able to:</p>
 <ul>
-<li>Conference 11-14 Dec 2022</li>
-<li>Added to IEEE Explore 23 Jan 2023</li>
-<li>GitHub repository created and last updated on 17 Jan 2022</li>
+<li>Inform the author/s</li>
+<li>Archive another version of the repository</li>
 </ul>
-<p>Looking at Python and Simpy…</p>
-<ul>
-<li>https://peps.python.org/pep-0596/ - latest python 3.9 version possible would be 3.9.10 (14 Jan 2022)</li>
-<li>https://pypi.org/project/simpy/#history - latest simpy possible would be 4.0.1 (15 Apr 2020)</li>
-</ul>
-<p>I create a conda environment in <code>reproduction/</code> (which has a benefit over the virtual environment of also including the python version). I then built this using mamba (<code>mamba env create --name anagnostou2022 --file environment.yml</code>).</p>
-</section>
-<section id="run-code" class="level2">
-<h2 class="anchored" data-anchor-id="run-code">16.13-16.24: Run code</h2>
-<p>Copied relevant files to <code>reproduction/</code> then, following their instruction, ran:</p>
-<pre><code>python3 main.py -z ZONES.csv -p ICU_INPUT_PARAMS.csv -c DAILY_ARRIVALS.csv</code></pre>
-<p>This ran quickly and without issue, producing identical results as provided in <code>OUT_STATS.csv</code>. This is a pretty simple, small, logical file.</p>
-<p>I had a look through the code again to see if I could spot anything to create the plot, but didn’t find anything. I then had a look at the other directory they mention which creates the dashboard, <code>https://gitlab.com/anabrunel/charm-app</code>. This has:</p>
-<ul>
-<li>Additional requirements - confirming simpy 4.0.1 was correct</li>
-<li>Extra file <code>charm_app.py</code> - but looking through the code, this produces scatter plots with <code>create_traces()</code> which look like they might be Figure 5A (but not in scope)</li>
-</ul>
-<p>As I cannot spot any other plotting functions, I’m assuming that I will need to write these from scratch.</p>
-</section>
-<section id="write-plotting-function" class="level2">
-<h2 class="anchored" data-anchor-id="write-plotting-function">16.29-17.00: Write plotting function</h2>
-<p>Created <code>reproduction.ipynb</code>, which required adding <code>ipykernel</code> and <code>pandas</code> and <code>matplotlib</code> to the environment.</p>
-<p>The column names in the model output csv were easy to interpret, and so I could identify the appropriate columns needed for the plots.</p>
-<p>Ran out of time to finish today.</p>
-</section>
-<section id="timings" class="level2">
-<h2 class="anchored" data-anchor-id="timings">Timings</h2>
-<div id="eecdbbfa" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>sys.path.append(<span class="st">'../'</span>)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> timings <span class="im">import</span> calculate_times</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Minutes used prior to today</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>used_to_date <span class="op">=</span> <span class="dv">45</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Times from today</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>times <span class="op">=</span> [</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    (<span class="st">'15.44'</span>, <span class="st">'15.50'</span>),</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    (<span class="st">'15.58'</span>, <span class="st">'16.11'</span>),</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    (<span class="st">'16.13'</span>, <span class="st">'16.24'</span>),</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    (<span class="st">'16.29'</span>, <span class="st">'17.00'</span>)]</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>calculate_times(used_to_date, times)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Time spent today: 61m, or 1h 1m
-Total used to date: 106m, or 1h 46m
-Time remaining: 2294m, or 38h 14m
-Used 4.4% of 40 hours max</code></pre>
-</div>
-</div>
 
 
 </section>
@@ -789,7 +697,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022/edit/main/logbook/posts/2024_08_12/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022/edit/main/logbook/posts/2024_10_01/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
