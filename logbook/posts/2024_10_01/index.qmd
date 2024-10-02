@@ -1,0 +1,30 @@
+---
+title: "Day 5"
+author: "Amy Heather"
+date: "2024-10-02"
+categories: [reproduction]
+bibliography: ../../../quarto_site/references.bib
+---
+
+::: {.callout-note}
+
+Test-run of reproduction package, informing author/s and archiving repository.
+
+:::
+
+## Untimed: Test-run of reproduction package
+
+Tom did a test-run on XPS13 with Ubuntu 22.04:
+
+* Environment creation - confirm works as expected
+* Pytest - completed successfully
+* Reproduction.ipynb - reproduces charts
+* Dockerfile - container built successfully
+* Docker container - launched successfully and ran reproduction.ipynb
+
+## Untimed: Wrap-up
+
+This marks the reproduction as complete, so we are able to:
+
+* Inform the author/s
+* Archive another version of the repository
