@@ -305,7 +305,7 @@
     "href": "index.html#citation",
     "title": "Reproducing Anagnostou et al. 2022",
     "section": "Citation",
-    "text": "Citation\nAPA:\nHeather A., Monks T., Harper A. (2024). STARS: Computational reproducibility of Anagnostou et al. 2022 (version 0.1.0). URL: https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022\nSee CITATION.cff and citation_bibtex.bib for alternative formats."
+    "text": "Citation\nAPA:\nHeather A., Monks T., Harper A. (2024). STARS: Computational reproducibility of Anagnostou et al. 2022 (version 0.2.0). URL: https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022\nSee CITATION.cff and citation_bibtex.bib for alternative formats."
   },
   {
     "objectID": "index.html#license",
@@ -327,6 +327,13 @@
     "title": "Day 5",
     "section": "Untimed: Test-run of reproduction package",
     "text": "Untimed: Test-run of reproduction package\nTom did a test-run on XPS13 with Ubuntu 22.04:\n\nEnvironment creation - confirm works as expected\nPytest - completed successfully\nReproduction.ipynb - reproduces charts\nDockerfile - container built successfully\nDocker container - launched successfully and ran reproduction.ipynb"
+  },
+  {
+    "objectID": "logbook/posts/2024_10_01/index.html#untimed-checking-unmet-criteria-in-evaluation",
+    "href": "logbook/posts/2024_10_01/index.html#untimed-checking-unmet-criteria-in-evaluation",
+    "title": "Day 5",
+    "section": "Untimed: Checking “unmet” criteria in evaluation",
+    "text": "Untimed: Checking “unmet” criteria in evaluation\nTom also looked over the unmet criteria. Agreed in all cases. For reporting guidelines, he noted:\n“The one that I thought about the most was”assumptions”. I re-read the CHARM section of the paper and my view is that I wasn’t clear on what were assumptions due to lack of knowledge/data and what wasn’t. I suspect using something like the Triangular distribution was an assumption as they had limited data, but its not stated explicitly. I guess that’s an issue with the limited space in a conference paper more than anything. So I agree with your not met.”"
   },
   {
     "objectID": "logbook/posts/2024_10_01/index.html#untimed-wrap-up",
