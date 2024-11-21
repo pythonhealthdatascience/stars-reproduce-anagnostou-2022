@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Amy Heather">
-<meta name="dcterms.date" content="2024-08-13">
+<meta name="dcterms.date" content="2024-11-21">
 
-<title>Day 3 – Reproducing Anagnostou et al.&nbsp;2022</title>
+<title>Day 6 – Reproducing Anagnostou et al.&nbsp;2022</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,61 +22,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -223,12 +169,9 @@ div.csl-indent {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Day 3</h1>
+      <h1 class="title">Day 6</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">reproduction</div>
-                <div class="quarto-category">report</div>
                 <div class="quarto-category">evaluation</div>
-                <div class="quarto-category">compendium</div>
               </div>
                   </div>
   </div>
@@ -246,7 +189,7 @@ div.csl-indent {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">August 13, 2024</p>
+        <p class="date">November 21, 2024</p>
       </div>
     </div>
     
@@ -262,19 +205,10 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#resuming-recreation-of-figure" id="toc-resuming-recreation-of-figure" class="nav-link active" data-scroll-target="#resuming-recreation-of-figure">09.14-09.38: Resuming recreation of figure</a></li>
-  <li><a href="#untimed-reproduction-success" id="toc-untimed-reproduction-success" class="nav-link" data-scroll-target="#untimed-reproduction-success">Untimed: Reproduction success</a></li>
-  <li><a href="#timings-for-reproduction" id="toc-timings-for-reproduction" class="nav-link" data-scroll-target="#timings-for-reproduction">Timings for reproduction</a></li>
-  <li><a href="#stars-evaluation" id="toc-stars-evaluation" class="nav-link" data-scroll-target="#stars-evaluation">09.47-10.00: STARS evaluation</a></li>
-  <li><a href="#badges" id="toc-badges" class="nav-link" data-scroll-target="#badges">10.03-10.09: Badges</a></li>
-  <li><a href="#stress-des" id="toc-stress-des" class="nav-link" data-scroll-target="#stress-des">10.17-10.46: STRESS-DES</a></li>
-  <li><a href="#ispor-sdm" id="toc-ispor-sdm" class="nav-link" data-scroll-target="#ispor-sdm">10.59-11.23: ISPOR-SDM</a></li>
-  <li><a href="#timings-for-evaluation" id="toc-timings-for-evaluation" class="nav-link" data-scroll-target="#timings-for-evaluation">Timings for evaluation</a></li>
-  <li><a href="#untimed-reflections" id="toc-untimed-reflections" class="nav-link" data-scroll-target="#untimed-reflections">Untimed: Reflections</a></li>
-  <li><a href="#untimed-summary-report" id="toc-untimed-summary-report" class="nav-link" data-scroll-target="#untimed-summary-report">Untimed: Summary report</a></li>
-  <li><a href="#untimed-research-compendium" id="toc-untimed-research-compendium" class="nav-link" data-scroll-target="#untimed-research-compendium">Untimed: Research compendium</a></li>
+  <li><a href="#revisit-evaluation" id="toc-revisit-evaluation" class="nav-link active" data-scroll-target="#revisit-evaluation">10.52-10.56: Revisit evaluation</a></li>
+  <li><a href="#untimed-update-summary-report" id="toc-untimed-update-summary-report" class="nav-link" data-scroll-target="#untimed-update-summary-report">Untimed: Update summary report</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022/edit/main/logbook/posts/2024_08_13/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022/edit/main/logbook/posts/2024_11_21/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -293,131 +227,26 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Finished reproduction of the single figure. Total time used: 2h 10m (5.4%). Evaluated against criteria and guidelines. Evaluation time: 1h 12m. Then completed summary report, reflections, and research compendium stage.</p>
+<p>Redid badge evaluation.</p>
 </div>
 </div>
-<section id="resuming-recreation-of-figure" class="level2">
-<h2 class="anchored" data-anchor-id="resuming-recreation-of-figure">09.14-09.38: Resuming recreation of figure</h2>
-<p>Continuing from yesterday. I included the running of the model within <code>reproduction.ipynb</code>, and finished up the Figure so it matches the paper.</p>
-<p>Feel this is reproduced at 09.38.</p>
-</section>
-<section id="untimed-reproduction-success" class="level2">
-<h2 class="anchored" data-anchor-id="untimed-reproduction-success">Untimed: Reproduction success</h2>
-<p>Filled in reproduction success page</p>
-</section>
-<section id="timings-for-reproduction" class="level2">
-<h2 class="anchored" data-anchor-id="timings-for-reproduction">Timings for reproduction</h2>
-<div id="4fede137" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>sys.path.append(<span class="st">'../'</span>)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> timings <span class="im">import</span> calculate_times</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Minutes used prior to today</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>used_to_date <span class="op">=</span> <span class="dv">106</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Times from today</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>times <span class="op">=</span> [</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    (<span class="st">'09.14'</span>, <span class="st">'09.38'</span>)]</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>calculate_times(used_to_date, times)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Time spent today: 24m, or 0h 24m
-Total used to date: 130m, or 2h 10m
-Time remaining: 2270m, or 37h 50m
-Used 5.4% of 40 hours max</code></pre>
-</div>
-</div>
-</section>
-<section id="stars-evaluation" class="level2">
-<h2 class="anchored" data-anchor-id="stars-evaluation">09.47-10.00: STARS evaluation</h2>
-<p>Evaluate code against STARS framework.</p>
-</section>
-<section id="badges" class="level2">
-<h2 class="anchored" data-anchor-id="badges">10.03-10.09: Badges</h2>
-<p>Evaluate code against against journal badge criteria. Explaining some of the decisions:</p>
+<section id="revisit-evaluation" class="level2">
+<h2 class="anchored" data-anchor-id="revisit-evaluation">10.52-10.56: Revisit evaluation</h2>
+<p>Revisited and revised the badge criteria to (a) make them up-to-date, and (b) make sure they are <em>specific</em> to the descriptions from each badge. Hence, redoing evaluations for all eight studies.</p>
+<p>Notes:</p>
 <ul>
-<li><strong>Complete set of materials</strong> - no ❌, as didn’t include code to create the figure itself</li>
-<li><strong>Carefully documented</strong> - yes ✅, considering the support of <code>CHARM_INFO.md</code> alongside the <code>README.md</code> to explain what the inputs were (hence support reuse and change of those inputs, since it explains that we run by calling <code>.csv</code> files with inputs)</li>
-<li><strong>README with step-by-step instructions</strong> - yes ✅, I was a little more uncertain on this one, since the README doesn’t explicitly say how to make the figure, but it does provide instructions that lead you to regenerate the exact model results from the paper, and so I feel that it does provide instructions to reproduce results sufficiently (although would be more complete to include instructions for figure too - so if it weren’t a yes/no decision for badges, I would’ve said this was partially met).</li>
+<li>Docs2 - No, as no inventory of artefacts (which is a specific requirement of that badge)</li>
+<li>Reproduce - No, as required more than minor troubleshooting: had to write code to produce the figure. Although it was pretty quick and straightforward, I think writing code for the figure is more than I would assume a volunteer checking a paper for a badge would do.</li>
 </ul>
 </section>
-<section id="stress-des" class="level2">
-<h2 class="anchored" data-anchor-id="stress-des">10.17-10.46: STRESS-DES</h2>
-<p>Evaluate paper against STRESS-DES reporting guidelines.</p>
-</section>
-<section id="ispor-sdm" class="level2">
-<h2 class="anchored" data-anchor-id="ispor-sdm">10.59-11.23: ISPOR-SDM</h2>
-<p>Evaluate paper against guidelines from <span class="citation" data-cites="zhang_reporting_2020">Zhang, Lhachimi, and Rogowski (<a href="#ref-zhang_reporting_2020" role="doc-biblioref">2020</a>)</span> derived from ISPOR-SDM. Explaining some of the decisions:</p>
-<ul>
-<li><strong>Run length</strong> - not provided. Can understand that this is because this is an example paper, but as it does not provide an example run length, or range of typical/expected/good run lengths, I feel this is not met (as that could have been provided).</li>
-</ul>
-</section>
-<section id="timings-for-evaluation" class="level2">
-<h2 class="anchored" data-anchor-id="timings-for-evaluation">Timings for evaluation</h2>
-<div id="bef351ea" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>sys.path.append(<span class="st">'../'</span>)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> timings <span class="im">import</span> calculate_times</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Minutes used prior to today</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>used_to_date <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Times from today</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>times <span class="op">=</span> [</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    (<span class="st">'09.47'</span>, <span class="st">'10.00'</span>),</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    (<span class="st">'10.03'</span>, <span class="st">'10.09'</span>),</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    (<span class="st">'10.17'</span>, <span class="st">'10.46'</span>),</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    (<span class="st">'10.59'</span>, <span class="st">'11.23'</span>)]</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>calculate_times(used_to_date, times, limit<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Time spent today: 72m, or 1h 12m
-Total used to date: 72m, or 1h 12m</code></pre>
-</div>
-</div>
-</section>
-<section id="untimed-reflections" class="level2">
-<h2 class="anchored" data-anchor-id="untimed-reflections">Untimed: Reflections</h2>
-<p>Wrote up <code>reflections.qmd</code> based on logbook entries.</p>
-</section>
-<section id="untimed-summary-report" class="level2">
-<h2 class="anchored" data-anchor-id="untimed-summary-report">Untimed: Summary report</h2>
-<p>Completed summary report using template.</p>
-</section>
-<section id="untimed-research-compendium" class="level2">
-<h2 class="anchored" data-anchor-id="untimed-research-compendium">Untimed: Research compendium</h2>
-<p><strong>Seperate folders for data, methods and outputs</strong>: Moved scripts into a <code>script</code> folder. Had to modify <code>utils.py</code> as:</p>
-<ul>
-<li>That automatically adds <code>./input</code> to your input file paths, but we need <code>../input</code>.</li>
-<li>Path to output file is different now too</li>
-</ul>
-<p><strong>Tests</strong>:</p>
-<ul>
-<li>Add <code>pytest</code> to environment</li>
-<li>Modify <code>utils.py</code> as it assumes you always want to save the results as a csv file in <code>../output/OUT_STATS.csv</code>. Tried to amend this following the structure they had already set up for the input file paths. <strong>Note:</strong> It was quite tricky to do this - this was pretty hard coded into the script.</li>
-</ul>
-<p><strong>Run time</strong>: Add note that run time is only a couple of seconds to the notebook and README</p>
-<p><strong>Dockerfile</strong>: Created Dockerfile as I did for <a href="https://github.com/pythonhealthdatascience/stars-reproduce-shoaib-2022/blob/main/reproduction/docker/">Shoaib et al.&nbsp;2022</a>.</p>
-<ul>
-<li>Add <code>conda-forge</code> channel, plus <code>jupyterlab</code> and <code>notebook</code> packages, to environment</li>
-<li>Built image, created container, opened JupyterLab, and ran both the notebook and test successfully.</li>
-</ul>
-<p><strong>GitHub container repository</strong>:</p>
-<ul>
-<li>Activated GitHub action</li>
-<li>Pulled container and tested running notebook and test successfully</li>
-</ul>
-<p><strong>README</strong>: Completed the README.</p>
-
+<section id="untimed-update-summary-report" class="level2">
+<h2 class="anchored" data-anchor-id="untimed-update-summary-report">Untimed: Update summary report</h2>
+<p>With new badge evaluation results.</p>
 
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-zhang_reporting_2020" class="csl-entry" role="listitem">
-Zhang, Xiange, Stefan K. Lhachimi, and Wolf H. Rogowski. 2020. <span>“Reporting <span>Quality</span> of <span>Discrete</span> <span>Event</span> <span>Simulations</span> in <span>Healthcare</span>—<span>Results</span> <span>From</span> a <span>Generic</span> <span>Reporting</span> <span>Checklist</span>.”</span> <em>Value in Health</em> 23 (4): 506–14. <a href="https://doi.org/10.1016/j.jval.2020.01.005">https://doi.org/10.1016/j.jval.2020.01.005</a>.
-</div>
-</div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -862,7 +691,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022/edit/main/logbook/posts/2024_08_13/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022/edit/main/logbook/posts/2024_11_21/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
