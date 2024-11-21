@@ -1,0 +1,25 @@
+---
+title: "Day 6"
+author: "Amy Heather"
+date: "2024-11-21"
+categories: [evaluation]
+---
+
+::: {.callout-note}
+
+Redid badge evaluation.
+
+:::
+
+## 10.52-10.56: Revisit evaluation
+
+Revisited and revised the badge criteria to (a) make them up-to-date, and (b) make sure they are *specific* to the descriptions from each badge. Hence, redoing evaluations for all eight studies.
+
+Notes:
+
+* Docs2 - No, as no inventory of artefacts (which is a specific requirement of that badge)
+* Reproduce - No, as required more than minor troubleshooting: had to write code to produce the figure. Although it was pretty quick and straightforward, I think writing code for the figure is more than I would assume a volunteer checking a paper for a badge would do.
+
+## Untimed: Update summary report
+
+With new badge evaluation results.
