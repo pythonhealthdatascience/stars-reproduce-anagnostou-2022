@@ -45,8 +45,8 @@ col = ['fully', 'partially', 'not', 'na']
 eval_dict = {
   'STARS (essential)': [7, 0, 1, 0],
   'STARS (optional)': [1, 1, 3, 0],
-  'Badges (criteria)': [10, 0, 2, 0],
-  'Badges (badges)': [5, 0, 7, 0],
+  'Badges (criteria)': [8, 0, 4, 0],
+  'Badges (badges)': [3, 0, 9, 0],
   'STRESS-DES': [14, 2, 5, 3],
   'ISPOR-SDM': [8, 3, 4, 3]
 }
